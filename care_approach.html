@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Care Approach - Danesbrook Care</title>
+    <meta name="description" content="Discover our personalized care philosophy, medical expertise, and quality standards. Learn about our specialized programs including dementia care, rehabilitation, and 24/7 nursing support." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+</head>
+<body class="font-body bg-background">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/CCH_logo.png" alt="Danesbrook-logo" style="height: 125px; width: 150px; padding-top: 10px; " />
+                        <div class="ml-3">
+                            <h1 class="text-xl font-headline font-bold text-primary" style="margin-left: -20px; font-size:x-large;" >Danesbrook Care</h1>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="care_approach.html" class="text-primary border-b-2 border-primary font-semibold">Care Services</a>
+                    <a href="life_at_danesbrook.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Life Here</a>
+                    <a href="rooms_facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Rooms & Facilities</a>
+                    <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
+                    <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
+                    <button class="btn-primary">Book a Tour</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="text-text-primary hover:text-primary p-2">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="care_approach.html" class="text-primary font-semibold">Care Services</a>
+                    <a href="life_at_danesbrook.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Life Here</a>
+                    <a href="rooms_facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Rooms & Facilities</a>
+                    <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
+                    <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
+                    <button class="btn-primary w-full">Book a Tour</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-accent-50 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Professional care team at Danesbrook" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+            <div class="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-800/60"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl lg:text-6xl font-headline font-bold text-white mb-6 leading-tight">
+                    Our <span class="text-accent-300">Care Approach</span>
+                </h1>
+                <p class="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
+                    Where professional excellence meets personal compassion. Every care plan is as unique as the individual we serve, ensuring your story continues with dignity, purpose, and joy.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="btn-primary text-lg px-8 py-4">Schedule Care Consultation</button>
+                    <button class="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-cta text-lg transition-all duration-300 hover:bg-white/30 focus:ring-2 focus:ring-white/50 focus:outline-none">
+                        Download Care Guide
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Philosophy Overview -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-6">
+                    Our <span class="text-primary">Care Philosophy</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                    At Danesbrook, we believe that exceptional care goes beyond meeting medical needs. We honor each resident's life story, preferences, and dreams while providing the highest standard of professional healthcare support.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-headline font-semibold text-text-primary mb-6">Person-Centered Care Excellence</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Individual Care Plans</h4>
+                                <p class="text-text-secondary">Every resident receives a personalized care plan developed through comprehensive assessment and ongoing collaboration with families and healthcare professionals.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Holistic Wellbeing</h4>
+                                <p class="text-text-secondary">We address physical, emotional, social, and spiritual needs through integrated care approaches that promote overall quality of life and personal fulfillment.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Family Partnership</h4>
+                                <p class="text-text-secondary">Families remain integral to the care journey through regular communication, care plan involvement, and meaningful participation in their loved one's daily life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.pixabay.com/photo/2017/07/31/11/22/people-2557396_1280.jpg" alt="Care team meeting with family" class="rounded-2xl shadow-card w-full h-96 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-card">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">98%</div>
+                            <div class="text-sm text-text-secondary">Family Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Care Programs -->
+    <section class="py-16 lg:py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    Specialized <span class="text-primary">Care Programs</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Our expert teams provide specialized care tailored to specific health conditions and individual needs, ensuring the highest quality of life for every resident.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dementia Care -->
+                <div class="card group hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-200 transition-colors duration-300">
+                        <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-4">Dementia & Memory Care</h3>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Specialized environments and evidence-based approaches designed to support cognitive function, reduce anxiety, and maintain dignity for residents with dementia and Alzheimer's.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-text-primary">
+                            <svg class="h-4 w-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Memory stimulation activities
+                        </li>
+                        <li class="flex items-center text-sm text-text-primary">
+                            <svg class="h-4 w-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Secure garden spaces
+                        </li>
+                        <li class="flex items-center text-sm text-text-primary">
+                            <svg class="h-4 w-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Family support programs
+                        </li>
+                    </ul>
+                    <button class="text-primary font-semibold hover:text-primary-700 transition-colors duration-200">Learn More →</button>
+                </div>
+
+                <!-- Rehabilitation Services -->
+                <div class="card group hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary-200 transition-colors duration-300">
+                        <svg class="h-8 w-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-4">Rehabilitation Services</h3>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Comprehensive rehabilitation programs designed to restore independence, improve mobility, and enhance quality of life following illness, injury, or surgery.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-text-primary">
+                            <svg class="h-4 w-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Physiotherapy & occupational therapy
+                        </li>
+                        <li class="flex items-center text-sm text-text-primary">
+                            <svg class="h-4 w-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Speech & language therapy
+                        </li>
+                        <li class="flex items-center text-sm text-text-primary">
+                            <svg class="h-4 w-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Personalized recovery plans
+                        </li>
+                    </ul>
+                    <button class="text-secondary font-semibold hover:text-secondary-700 transition-colors duration-200">Learn More →</button>
+                </div>
+
+                <!-- 24/7 Nursing Care -->
+                <div class="card group hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent-200 transition-colors duration-300">
+                        <svg class="h-8 w-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-4">24/7 Nursing Care</h3>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Round-the-clock professional nursing care ensuring medical needs are met with compassion, expertise, and immediate response to any health concerns.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-text-primary">
+                            <svg class="h-4 w-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Registered nurses on-site 24/7
+                        </li>
+                        <li class="flex items-center text-sm text-text-primary">
+                            <svg class="h-4 w-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Medication management
+                        </li>
+                        <li class="flex items-center text-sm text-text-primary">
+                            <svg class="h-4 w-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Emergency response protocols
+                        </li>
+                    </ul>
+                    <button class="text-accent font-semibold hover:text-accent-700 transition-colors duration-200">Learn More →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Credentials & Team -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    Meet Our <span class="text-primary">Expert Care Team</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Our highly qualified professionals bring decades of experience, ongoing training, and genuine compassion to every aspect of resident care.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Team Member 1 -->
+                <div class="card text-center group hover:shadow-lg transition-all duration-300">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dr. Sarah Mitchell, Director of Care" class="w-32 h-32 rounded-full object-cover mx-auto shadow-card" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute -bottom-2 -right-2 bg-primary text-white rounded-full p-2">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Dr. Sarah Mitchell</h3>
+                    <p class="text-primary font-semibold mb-3">Director of Care</p>
+                    <p class="text-text-secondary text-sm mb-4 leading-relaxed">
+                        "Every resident deserves care that honors their dignity and celebrates their unique story. My 15 years in geriatric medicine guide our person-centered approach."
+                    </p>
+                    <div class="space-y-2 text-xs text-text-secondary">
+                        <div class="flex items-center justify-center">
+                            <svg class="h-3 w-3 text-primary mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            MBChB, Geriatric Medicine
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <svg class="h-3 w-3 text-primary mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            15+ Years Experience
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="card text-center group hover:shadow-lg transition-all duration-300">
+                    <div class="relative mb-6">
+                        <img src="https://images.pixabay.com/photo/2017/03/05/00/34/people-2117069_1280.jpg" alt="James Thompson, Senior Nurse" class="w-32 h-32 rounded-full object-cover mx-auto shadow-card" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute -bottom-2 -right-2 bg-secondary text-white rounded-full p-2">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">James Thompson</h3>
+                    <p class="text-secondary font-semibold mb-3">Senior Nurse</p>
+                    <p class="text-text-secondary text-sm mb-4 leading-relaxed">
+                        "Building trust through consistent, compassionate care is at the heart of nursing. I'm here to ensure every resident feels safe and valued."
+                    </p>
+                    <div class="space-y-2 text-xs text-text-secondary">
+                        <div class="flex items-center justify-center">
+                            <svg class="h-3 w-3 text-secondary mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            RGN, Dementia Specialist
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <svg class="h-3 w-3 text-secondary mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            12+ Years Experience
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="card text-center group hover:shadow-lg transition-all duration-300">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Emma Davies, Activities Coordinator" class="w-32 h-32 rounded-full object-cover mx-auto shadow-card" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute -bottom-2 -right-2 bg-accent text-white rounded-full p-2">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Emma Davies</h3>
+                    <p class="text-accent font-semibold mb-3">Activities Coordinator</p>
+                    <p class="text-text-secondary text-sm mb-4 leading-relaxed">
+                        "Life should be filled with joy and purpose at every age. I create meaningful activities that spark connections and celebrate each resident's interests."
+                    </p>
+                    <div class="space-y-2 text-xs text-text-secondary">
+                        <div class="flex items-center justify-center">
+                            <svg class="h-3 w-3 text-accent mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            BA Recreation Therapy
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <svg class="h-3 w-3 text-accent mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            8+ Years Experience
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="contact_visit.html" class="btn-primary">Meet Our Full Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Standards & Certifications -->
+    <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    Quality Standards & <span class="text-primary">Certifications</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Our commitment to excellence is validated through rigorous quality standards, regular inspections, and continuous improvement initiatives.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- CQC Rating -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-card hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-2">Outstanding</h3>
+                    <p class="text-sm text-text-secondary">CQC Rating</p>
+                    <p class="text-xs text-text-secondary mt-2">Last Inspection: March 2025</p>
+                </div>
+
+                <!-- Staff Training -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-card hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-2">100%</h3>
+                    <p class="text-sm text-text-secondary">Staff Training</p>
+                    <p class="text-xs text-text-secondary mt-2">Compliance Rate</p>
+                </div>
+
+                <!-- Family Satisfaction -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-card hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-accent mb-2">4.9/5</h3>
+                    <p class="text-sm text-text-secondary">Family Rating</p>
+                    <p class="text-xs text-text-secondary mt-2">Based on 127 reviews</p>
+                </div>
+
+                <!-- Years of Service -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-card hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-2">20+</h3>
+                    <p class="text-sm text-text-secondary">Years Experience</p>
+                    <p class="text-xs text-text-secondary mt-2">Serving Wales</p>
+                </div>
+            </div>
+
+            <!-- Quality Metrics -->
+            <div class="bg-white rounded-2xl p-8 shadow-card">
+                <h3 class="text-2xl font-headline font-semibold text-text-primary mb-8 text-center">Quality Metrics & Transparency</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-success mb-2">99.2%</div>
+                        <div class="text-sm text-text-secondary mb-2">Medication Accuracy</div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-success h-2 rounded-full" style="width: 99.2%"></div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary mb-2">97.8%</div>
+                        <div class="text-sm text-text-secondary mb-2">Care Plan Compliance</div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 97.8%"></div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-secondary mb-2">98.5%</div>
+                        <div class="text-sm text-text-secondary mb-2">Family Communication</div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-secondary h-2 rounded-full" style="width: 98.5%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <button class="text-primary font-semibold hover:text-primary-700 transition-colors duration-200">
+                        View Full Quality Report →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Testimonials -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    What <span class="text-primary">Families Say</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    The trust families place in us is our greatest honor. Here are their authentic experiences with our care approach.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jennifer Walsh" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <div class="font-semibold text-text-primary">Jennifer Walsh</div>
+                            <div class="text-sm text-text-secondary">Daughter of resident Mary</div>
+                        </div>
+                        <div class="ml-auto flex text-accent">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="text-text-primary mb-4 font-accent italic">
+                        "The care team at Danesbrook doesn't just follow a care plan—they truly know my mother. They remember her stories, her preferences, and what makes her smile. The personalized approach has made all the difference in her happiness and health."
+                    </blockquote>
+                    <div class="text-sm text-text-secondary">Resident since January 2023</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Robert Chen" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <div class="font-semibold text-text-primary">Robert Chen</div>
+                            <div class="text-sm text-text-secondary">Son of resident David</div>
+                        </div>
+                        <div class="ml-auto flex text-accent">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="text-text-primary mb-4 font-accent italic">
+                        "After Dad's stroke, we needed specialized rehabilitation support. The therapy team worked closely with him to regain his independence, and the nursing staff provided exceptional medical care throughout his recovery. We couldn't be more grateful."
+                    </blockquote>
+                    <div class="text-sm text-text-secondary">Resident since September 2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloadable Resources -->
+    <section class="py-16 lg:py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    Care <span class="text-primary">Resources</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Download our comprehensive guides to learn more about our care approach, services, and what to expect when choosing Danesbrook.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Resource 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-card hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-3">Care Philosophy Guide</h3>
+                    <p class="text-text-secondary mb-6 text-sm leading-relaxed">
+                        Comprehensive overview of our person-centered care approach, quality standards, and what makes Danesbrook unique.
+                    </p>
+                    <button class="btn-primary w-full">Download PDF</button>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-card hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-8 w-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-3">Care Assessment Checklist</h3>
+                    <p class="text-text-secondary mb-6 text-sm leading-relaxed">
+                        Detailed checklist to help families prepare for care assessments and understand our evaluation process.
+                    </p>
+                    <button class="btn-secondary w-full">Download PDF</button>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-card hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="h-8 w-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-3">Family Support Guide</h3>
+                    <p class="text-text-secondary mb-6 text-sm leading-relaxed">
+                        Resources for families including communication tips, visiting guidelines, and ways to stay involved in care.
+                    </p>
+                    <button class="btn-accent w-full">Download PDF</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 lg:py-24 bg-gradient-to-r from-primary to-primary-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-headline font-bold text-white mb-6">
+                Ready to Learn More About Our <span class="text-accent-300">Care Approach</span>?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Schedule a personal consultation to discuss your loved one's specific care needs and see how our approach can make a difference.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_visit.html" class="bg-white text-primary px-8 py-4 rounded-lg font-cta text-lg transition-all duration-300 hover:bg-gray-100 focus:ring-2 focus:ring-white/50 focus:outline-none">
+                    Schedule Care Consultation
+                </a>
+                <a href="rooms_facilities.html" class="bg-accent text-white px-8 py-4 rounded-lg font-cta text-lg transition-all duration-300 hover:bg-accent-700 focus:ring-2 focus:ring-accent-200 focus:outline-none">
+                    Tour Our Facilities
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary mr-2" viewBox="0 0 48 48" fill="currentColor">
+                            <path d="M24 4L6 16v26h12V28h12v14h12V16L24 4zm0 6.83L36 18v20h-4V24H16v14h-4V18l12-7.17z"/>
+                            <circle cx="24" cy="18" r="3" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <div class="font-headline font-bold text-lg">Danesbrook Care</div>
+                            <div class="text-sm text-gray-400">Where Life Continues to Flourish</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Premium residential care home serving Wales with dignity, compassion, and excellence for over 20 years.
+                    </p>
+                    <div class="flex space-x-4">
+    <!-- Facebook -->
+    <a href="https://facebook.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 
+            24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 
+            4.659-4.788 1.325 0 2.463.099 2.793.143v3.24h-1.918c-1.504 
+            0-1.797.716-1.797 1.765v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 
+            24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0"/>
+        </svg>
+    </a>
+
+    <!-- Twitter / X -->
+    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 
+            1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 
+            1.05C18.37 4.5 17.26 4 16 4c-2.35 
+            0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.99-8.84-4.58a4.28 
+            4.28 0 0 0-.58 2.15c0 1.49.75 2.81 
+            1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 
+            2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 
+            1-1.93.07 4.28 4.28 0 0 0 4 
+            2.98c-2 .79-3.49 1.19-5.33 
+            1.84a12.2 12.2 0 0 0 6.93 2.04C16 
+            21 20.33 14.46 20.33 8.79c0-.19 
+            0-.37-.01-.56.84-.6 1.56-1.36 
+            2.14-2.23z"/>
+        </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.76 5.76 0 0 
+            1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 
+            22h-8.5A5.76 5.76 0 0 1 2 
+            16.25v-8.5A5.76 5.76 0 0 1 7.75 
+            2zm0 1.5A4.25 4.25 0 0 0 
+            3.5 7.75v8.5A4.25 4.25 0 0 0 
+            7.75 20.5h8.5A4.25 4.25 0 0 0 
+            20.5 16.25v-8.5A4.25 4.25 0 0 0 
+            16.25 3.5h-8.5zM12 7a5 5 0 1 1 
+            0 10 5 5 0 0 1 0-10zm0 1.5a3.5 
+            3.5 0 1 0 0 7 3.5 3.5 0 0 0 
+            0-7zm5-2a1 1 0 1 1-2 
+            0 1 1 0 0 1 2 0z"/>
+        </svg>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14C2.24 0 0 2.24 0 
+            5v14c0 2.76 2.24 5 5 
+            5h14c2.76 0 5-2.24 
+            5-5V5c0-2.76-2.24-5-5-5zM8.34 
+            19.34H5.67V9h2.67v10.34zM7 
+            7.67c-.85 0-1.55-.7-1.55-1.55 
+            0-.85.7-1.55 1.55-1.55.85 
+            0 1.55.7 1.55 1.55 0 
+            .85-.7 1.55-1.55 1.55zm12.34 
+            11.67h-2.67v-5.34c0-1.27-.02-2.9-1.76-2.9-1.76 
+            0-2.03 1.38-2.03 2.8v5.44H10.2V9h2.56v1.41h.04c.36-.67 
+            1.24-1.37 2.55-1.37 2.73 0 3.23 
+            1.8 3.23 4.14v6.16h-.01z"/>
+        </svg>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.5 6.2a2.94 2.94 0 0 0-2.06-2.08C19.6 
+            3.5 12 3.5 12 3.5s-7.6 0-9.44.62A2.94 
+            2.94 0 0 0 .5 6.2C0 8.04 0 
+            12 0 12s0 3.96.5 5.8a2.94 2.94 0 0 0 
+            2.06 2.08C4.4 20.5 12 20.5 12 
+            20.5s7.6 0 9.44-.62A2.94 2.94 0 0 0 
+            23.5 17.8c.5-1.84.5-5.8.5-5.8s0-3.96-.5-5.8zM9.75 
+            15.5v-7l6 3.5-6 3.5z"/>
+        </svg>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://tiktok.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M16.006 6.124a4.94 4.94 0 0 0 .293 
+            1.672 4.918 4.918 0 0 0 2.032 
+            2.326 4.918 4.918 0 0 0 2.562.7V7.188a8.337 
+            8.337 0 0 1-2.511-.39 8.332 8.332 0 0 
+            1-2.376-1.262zM12.452 0h3.202v17.065c0 1.547-.45 
+            2.78-1.351 3.698-.9.919-2.01 1.382-3.333 
+            1.382-1.322 0-2.433-.463-3.332-1.382-.9-.918-1.35-2.151-1.35-3.698 
+            0-1.546.45-2.778 1.35-3.696.9-.919 2.01-1.382 
+            3.332-1.382.406 0 .793.067 1.158.2V0z"/>
+        </svg>
+    </a>
+
+    <!-- Pinterest -->
+    <a href="https://pinterest.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 
+            5.373 0 12c0 5.084 3.163 9.414 7.643 
+            11.06-.106-.94-.2-2.385.042-3.413.218-.937 
+            1.408-5.957 1.408-5.957s-.36-.72-.36-1.781c0-1.665.968-2.911 
+            2.169-2.911 1.025 0 1.517.77 1.517 
+            1.688 0 1.028-.653 2.567-.993 
+            3.992-.285 1.194.6 2.165 
+            1.776 2.165 2.13 0 3.768-2.245 
+            3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 
+            0-5.409 2.562-5.409 5.2 0 1.009.394 2.091.889 
+            2.741.098.12.112.226.085.345-.091.376-.294 
+            1.199-.336 1.364-.053.225-.172.271-.402.165-1.495-.692-2.432-2.878-2.432-4.647 
+            0-3.777 2.748-7.252 7.92-7.252 4.158 
+            0 7.392 2.967 7.392 6.923 0 4.136-2.607 
+            7.463-6.233 7.463-1.214 0-2.357-.629-2.75-1.378l-.748 
+            2.854c-.271 1.042-1.002 2.349-1.492 3.145C9.57 23.812 
+            10.763 24 12.017 24c6.627 0 12.01-5.373 
+            12.01-12 0-6.627-5.383-12-12.01-12z"/>
+        </svg>
+    </a>
+</div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="care_approach.html" class="text-gray-400 hover:text-white transition-colors duration-200">Our Care Approach</a></li>
+                        <li><a href="life_at_danesbrook.html" class="text-gray-400 hover:text-white transition-colors duration-200">Life at Danesbrook</a></li>
+                        <li><a href="rooms_facilities.html" class="text-gray-400 hover:text-white transition-colors duration-200">Rooms & Facilities</a></li>
+                        <li><a href="contact_visit.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact & Visit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-headline font-semibold text-lg mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-gray-400">24/7 Nursing Care</span></li>
+                        <li><span class="text-gray-400">Dementia Care</span></li>
+                        <li><span class="text-gray-400">Rehabilitation Services</span></li>
+                        <li><span class="text-gray-400">Activity Programs</span></li>
+                        <li><span class="text-gray-400">Family Support</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-headline font-semibold text-lg mb-4">Contact Us</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <svg class="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span class="text-gray-400">123 Care Lane<br />Cardiff, Wales CF10 1AB</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span class="text-gray-400">01234 567 890</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="text-gray-400">info@danesbrookcare.co.uk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Danesbrook Care. All Rights Reserved. | 
+                    <a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Privacy Policy</a> | 
+                    <a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+        });
+
+        // Progress bar animation on scroll
+        window.addEventListener('scroll', function() {
+            const progressBars = document.querySelectorAll('[style*="width:"]');
+            progressBars.forEach(bar => {
+                const rect = bar.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    bar.style.transition = 'width 1s ease-in-out';
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
