@@ -1743,7 +1743,7 @@ select{
 
 .text-accent-300{
   --tw-text-opacity: 1;
-  color: rgb(249 213 167 / var(--tw-text-opacity, 1));
+  color: #fbbf24;
 }
 
 .text-error{
@@ -2544,3 +2544,10 @@ body {
     line-height: 1;
   }
 }
+
+/* --------------- */
+/* Hero Section */
+/*--------------- */
+
+  
+  

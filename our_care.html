@@ -50,7 +50,7 @@
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="our_care.html" class="text-primary border-b-2 border-primary font-semibold">Our Care</a>
                     <a href="life_at_danesbrook.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Life Here</a>
-                    <a href="rooms_facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
+                    <a href="facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
                     <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
                     <a href="gallery.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Gallery</a>
                     <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
@@ -72,7 +72,7 @@
                 <div class="flex flex-col space-y-4">
                     <a href="our_care.html" class="text-primary font-semibold">Care Services</a>
                     <a href="life_at_danesbrook.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Life Here</a>
-                    <a href="rooms_facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
+                    <a href="facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
                     <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
                     <a href="gallery.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Gallery</a>
                     <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
@@ -339,6 +339,8 @@
         </div>
 
         <!-- Carousel Dots -->
+       <!-- Carousel Dots with Swipe Indicator -->
+    <div class="carousel-navigation">
         <div class="carousel-dots">
             <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
             <button class="dot" data-slide="1" aria-label="Slide 2"></button>
@@ -346,109 +348,227 @@
             <button class="dot" data-slide="3" aria-label="Slide 4"></button>
             <button class="dot" data-slide="4" aria-label="Slide 5"></button>
         </div>
+        <div class="swipe-hint">
+            <span>Swipe for more</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
     </section>
 
 
-    <style>
-        /* Hero Section - Fixed Height */
+  <style>
+    /* Hero Section - Responsive Height */
+    .hero-section {
+        position: relative;
+        height: 85vh;
+        min-height: 500px;
+        max-height: 700px;
+        overflow: hidden;
+    }
+
+    /* Mobile height adjustments */
+    @media (max-width: 768px) {
         .hero-section {
-            position: relative;
-            height: 85vh;
+            height: 100vh;
+            min-height: 600px;
+            max-height: 900px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-section {
+            height: calc(100vh - 60px); /* Account for mobile browser UI */
             min-height: 500px;
-            max-height: 700px;
-            overflow: hidden;
         }
+    }
 
-        /* Background Carousel */
-        .hero-carousel {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-        }
+    /* Background Carousel */
+    .hero-carousel {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-        .hero-slide {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1000ms ease-in-out;
-        }
+    .hero-slide {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1000ms ease-in-out;
+    }
 
-        .hero-slide.active {
-            opacity: 1;
-        }
+    .hero-slide.active {
+        opacity: 1;
+    }
 
-        .hero-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    .hero-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-        /* Ken Burns effect for images */
+    /* Ken Burns effect - reduced for mobile */
+    @keyframes kenburns {
+        0%   { transform: scale(1.05) translate(0, 0); }
+        100% { transform: scale(1.1) translate(-1%, -1%); }
+    }
+
+    @media (min-width: 769px) {
         @keyframes kenburns {
             0%   { transform: scale(1.1) translate(0, 0); }
             100% { transform: scale(1.2) translate(-2%, -2%); }
         }
-        .animate-kenburns {
-            animation: kenburns 12s ease-in-out infinite alternate;
-        }
+    }
 
-        
+    .animate-kenburns {
+        animation: kenburns 12s ease-in-out infinite alternate;
+    }
 
-        /* Content Container - Fixed Height */
+    /* Content Container - Responsive */
+    .hero-content {
+        position: relative;
+        height: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    @media (min-width: 640px) {
         .hero-content {
-            position: relative;
-            height: 100%;
-            max-width: 1280px;
-            margin: 0 auto;
             padding: 0 1.5rem;
-            display: flex;
-            align-items: center;
-            z-index: 10;
         }
+    }
 
-        .content-wrapper {
-            width: 100%;
-            max-width: 56rem;
-        }
+    .content-wrapper {
+        width: 100%;
+        max-width: 56rem;
+    }
 
-        /* Slide Content Areas - Fixed Height */
+    /* Slide Content Areas - Responsive Height */
+    .slide-content {
+        display: none;
+        opacity: 0;
+        min-height: 450px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    @media (min-width: 640px) {
         .slide-content {
-            display: none;
-            opacity: 0;
-            height: 550px;
-            flex-direction: column;
-            justify-content: center;
+            min-height: 500px;
         }
+    }
 
-        .slide-content.active {
-            display: flex;
-            opacity: 1;
+    @media (min-width: 1024px) {
+        .slide-content {
+            min-height: 550px;
         }
+    }
 
-        /* Typography */
+    .slide-content.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    /* Typography - Mobile Optimized */
+    .hero-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 480px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
         .hero-title {
             font-size: 3rem;
-            font-weight: 700;
-            color: white;
-            line-height: 1.1;
             margin-bottom: 1.5rem;
         }
+    }
 
-        .hero-title .accent {
-            color: #f9d5a7;
+    @media (min-width: 1024px) {
+        .hero-title {
+            font-size: 3.75rem;
         }
+    }
 
+    .hero-title .accent {
+        color: #fbbf24;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 480px) {
+        .hero-description {
+            font-size: 1.125rem;
+        }
+    }
+
+    @media (min-width: 768px) {
         .hero-description {
             font-size: 1.25rem;
-            color: rgba(255, 255, 255, 0.9);
             line-height: 1.6;
             margin-bottom: 2.5rem;
         }
+    }
 
-        /* Animation 1: Fade In Words */
+    /* Simplified animations for mobile */
+    @media (max-width: 768px) {
+        /* Reduce animation complexity */
+        @keyframes fadeInWord {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(10px);
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from { 
+                opacity: 0; 
+                transform: scale(0.9);
+            }
+            to { 
+                opacity: 1; 
+                transform: scale(1);
+            }
+        }
+
+        .fade-in-word,
+        .slide-up-word,
+        .zoom-in,
+        .split-text {
+            animation-duration: 0.5s !important;
+        }
+    }
+
+    /* Desktop animations (unchanged) */
+    @media (min-width: 769px) {
         @keyframes fadeInWord {
             from {
                 opacity: 0;
@@ -459,21 +579,7 @@
                 transform: translateY(0);
             }
         }
-        .fade-in-word {
-            opacity: 0;
-            display: inline-block;
-            animation: fadeInWord 0.8s ease-out forwards;
-        }
-        .fade-in-word.delay-1 { animation-delay: 0.2s; }
-        .fade-in-word.delay-2 { animation-delay: 0.4s; }
-        .fade-in-word.delay-3 { animation-delay: 0.6s; }
 
-        .fade-in-up {
-            opacity: 0;
-            animation: fadeInWord 1s ease-out 0.8s forwards;
-        }
-
-        /* Animation 2: Slide Up */
         @keyframes slideUp {
             from {
                 opacity: 0;
@@ -484,21 +590,7 @@
                 transform: translateY(0);
             }
         }
-        .slide-up-word {
-            opacity: 0;
-            display: inline-block;
-            animation: slideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-        }
-        .slide-up-word.delay-1 { animation-delay: 0.15s; }
-        .slide-up-word.delay-2 { animation-delay: 0.3s; }
-        .slide-up-word.delay-3 { animation-delay: 0.45s; }
 
-        .slide-up-fade {
-            opacity: 0;
-            animation: slideUp 0.8s ease-out 0.6s forwards;
-        }
-
-        /* Animation 3: Zoom In */
         @keyframes zoomIn {
             from {
                 opacity: 0;
@@ -509,324 +601,491 @@
                 transform: scale(1);
             }
         }
-        .zoom-in {
-            opacity: 0;
-            display: inline-block;
-            animation: zoomIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-        }
-        .zoom-in.delay-1 { animation-delay: 0.2s; }
-        .zoom-in.delay-2 { animation-delay: 0.4s; }
-        .zoom-in.delay-3 { animation-delay: 0.6s; }
+    }
 
-        /* Animation 4: Split Text */
-        @keyframes splitText {
-            from {
-                opacity: 0;
-                transform: translateX(-30px) rotateY(-90deg);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0) rotateY(0);
-            }
-        }
-        .split-text {
-            opacity: 0;
-            display: inline-block;
-            animation: splitText 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-        }
-        .split-text.delay-1 { animation-delay: 0.2s; }
-        .split-text.delay-2 { animation-delay: 0.4s; }
-        .split-text.delay-3 { animation-delay: 0.6s; }
+    /* Common animation classes */
+    .fade-in-word {
+        opacity: 0;
+        display: inline-block;
+        animation: fadeInWord 0.8s ease-out forwards;
+    }
+    .fade-in-word.delay-1 { animation-delay: 0.2s; }
+    .fade-in-word.delay-2 { animation-delay: 0.4s; }
+    .fade-in-word.delay-3 { animation-delay: 0.6s; }
 
-        /* Animation 5: Wave In */
-        @keyframes waveIn {
-            0% {
-                opacity: 0;
-                transform: translateY(20px) scale(0.95);
-            }
-            50% {
-                transform: translateY(-5px) scale(1.02);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-        .wave-in {
-            opacity: 0;
-            animation: waveIn 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.8s forwards;
-        }
+    .fade-in-up {
+        opacity: 0;
+        animation: fadeInWord 1s ease-out 0.8s forwards;
+    }
 
-        /* Cards Grid */
+    .slide-up-word {
+        opacity: 0;
+        display: inline-block;
+        animation: slideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    .slide-up-word.delay-1 { animation-delay: 0.15s; }
+    .slide-up-word.delay-2 { animation-delay: 0.3s; }
+    .slide-up-word.delay-3 { animation-delay: 0.45s; }
+
+    .slide-up-fade {
+        opacity: 0;
+        animation: slideUp 0.8s ease-out 0.6s forwards;
+    }
+
+    .zoom-in {
+        opacity: 0;
+        display: inline-block;
+        animation: zoomIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    .zoom-in.delay-1 { animation-delay: 0.2s; }
+    .zoom-in.delay-2 { animation-delay: 0.4s; }
+    .zoom-in.delay-3 { animation-delay: 0.6s; }
+
+    /* Cards Grid - Mobile Optimized */
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
         .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 1.25rem;
             margin-bottom: 2.5rem;
         }
+    }
 
+    @media (max-width: 360px) {
+        .cards-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .feature-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.75rem;
+        padding: 1rem;
+        transition: all 300ms ease;
+        opacity: 0;
+        -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+    }
+
+    @media (min-width: 640px) {
         .feature-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 1rem;
             padding: 1.5rem;
-            transition: all 300ms ease;
-            opacity: 0;
+            border-radius: 1rem;
         }
+    }
 
-        .feature-card.card-animate {
-            animation: zoomIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-        }
+    .feature-card.card-animate {
+        animation: zoomIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
 
-        .feature-card.card-animate:nth-child(1) { animation-delay: 1s; }
-        .feature-card.card-animate:nth-child(2) { animation-delay: 1.15s; }
-        .feature-card.card-animate:nth-child(3) { animation-delay: 1.3s; }
-        .feature-card.card-animate:nth-child(4) { animation-delay: 1.45s; }
+    .feature-card.card-animate:nth-child(1) { animation-delay: 1s; }
+    .feature-card.card-animate:nth-child(2) { animation-delay: 1.15s; }
+    .feature-card.card-animate:nth-child(3) { animation-delay: 1.3s; }
+    .feature-card.card-animate:nth-child(4) { animation-delay: 1.45s; }
 
+    @media (hover: hover) {
         .feature-card:hover {
             background: rgba(255, 255, 255, 0.15);
             transform: translateY(-5px) scale(1.02);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
+    }
 
+    /* Touch feedback for mobile */
+    @media (hover: none) {
+        .feature-card:active {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(0.98);
+        }
+    }
+
+    .card-icon {
+        color: #ffffff;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: 640px) {
         .card-icon {
-            color: #ffc06e;
             font-size: 2.5rem;
             margin-bottom: 0.75rem;
         }
+    }
 
+    .card-title {
+        color: white;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 0.125rem;
+    }
+
+    @media (min-width: 640px) {
         .card-title {
-            color: white;
             font-size: 1.125rem;
-            font-weight: 600;
             margin-bottom: 0.25rem;
         }
+    }
 
+    .card-subtitle {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
         .card-subtitle {
-            color: rgba(255, 255, 255, 0.7);
             font-size: 0.875rem;
         }
+    }
 
-        /* Horizontal Cards */
+    /* Horizontal Cards */
+    .horizontal-card {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
         .horizontal-card {
-            display: flex;
-            align-items: center;
             gap: 1rem;
         }
+    }
 
+    .horizontal-card .card-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    @media (min-width: 640px) {
         .horizontal-card .card-icon {
             font-size: 1.75rem;
-            margin-bottom: 0;
         }
+    }
 
-        .horizontal-card .card-content {
-            flex: 1;
-        }
+    .horizontal-card .card-content {
+        flex: 1;
+        min-width: 0; /* Prevent text overflow */
+    }
 
-        /* CTA Buttons */
+    /* CTA Buttons - Mobile Optimized */
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
         .cta-buttons {
-            display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             gap: 1rem;
         }
+    }
 
+    .btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.75rem;
+        border: none;
+        cursor: pointer;
+        transition: all 300ms ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        opacity: 0;
+        width: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    @media (min-width: 640px) {
         .btn {
             padding: 1rem 2rem;
             font-size: 1.125rem;
-            font-weight: 600;
-            border-radius: 0.75rem;
-            border: none;
-            cursor: pointer;
-            transition: all 300ms ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            opacity: 0;
+            width: auto;
         }
+    }
 
-        .btn.button-fade {
-            animation: fadeInWord 1s ease-out 1.6s forwards;
+    .btn.button-fade {
+        animation: fadeInWord 1s ease-out 1.6s forwards;
+    }
+
+    .btn.button-fade.delay-1 {
+        animation-delay: 1.8s;
+    }
+
+    /* Button text responsiveness */
+    .btn-text {
+        display: none;
+    }
+
+    .btn-text-mobile {
+        display: inline;
+    }
+
+    @media (min-width: 480px) {
+        .btn-text {
+            display: inline;
         }
-
-        .btn.button-fade.delay-1 {
-            animation-delay: 1.8s;
+        .btn-text-mobile {
+            display: none;
         }
+    }
 
-        
+    .btn-primary {
+        background: #2D5A3D;
+        color: white;
+    }
 
+    @media (hover: hover) {
         .btn-primary:hover {
             background: #f59e0b;
             box-shadow: 0 6px 20px rgba(251, 191, 36, 0.5);
             transform: translateY(-2px);
         }
+    }
 
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
+    @media (hover: none) {
+        .btn-primary:active {
+            transform: scale(0.98);
         }
+    }
 
+    .btn-secondary {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+    @media (hover: hover) {
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.3);
         }
+    }
 
-        /* Carousel Navigation Dots */
-        .carousel-dots {
-            position: absolute;
+    /* Carousel Navigation - Mobile Enhanced */
+    .carousel-navigation {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        z-index: 20;
+    }
+
+    @media (min-width: 640px) {
+        .carousel-navigation {
             bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 0.75rem;
-            z-index: 20;
         }
+    }
 
-        .dot {
-            width: 0.75rem;
-            height: 0.75rem;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.5);
-            border: none;
-            cursor: pointer;
-            transition: all 300ms ease;
-        }
+    .carousel-dots {
+        display: flex;
+        gap: 0.75rem;
+        padding: 0.5rem;
+    }
 
+    .dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+        transition: all 300ms ease;
+        position: relative;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Increase touch target for mobile */
+    .dot::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+    }
+
+    @media (hover: hover) {
         .dot:hover {
             background: #fbbf24;
             transform: scale(1.1);
         }
+    }
 
-        .dot.active {
-            background: white;
-            transform: scale(1.3);
+    .dot.active {
+        background: white;
+        transform: scale(1.3);
+    }
+
+    /* Swipe hint for mobile */
+    .swipe-hint {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.75rem;
+        animation: swipeHint 2s ease-in-out infinite;
+    }
+
+    @media (min-width: 768px) {
+        .swipe-hint {
+            display: none;
         }
+    }
 
-        /* Responsive */
-        @media (min-width: 640px) {
-            .cards-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
+    @keyframes swipeHint {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(5px); }
+    }
+
+    /* Performance optimizations */
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
         }
+    }
 
-        @media (min-width: 768px) {
-            .hero-title {
-                font-size: 3.75rem;
-            }
-
-            .hero-description {
-                font-size: 1.5rem;
-            }
+    /* Prevent horizontal scroll on mobile */
+    @media (max-width: 768px) {
+        .hero-section {
+            overflow-x: hidden;
         }
+    }
+</style>
 
-        @media (max-width: 640px) {
-            .hero-section {
-                min-height: 650px;
-            }
 
-            .slide-content {
-                height: 500px;
-            }
+    <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    const slideContents = document.querySelectorAll('.slide-content');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+    let autoSlideInterval;
+    let touchStartX = 0;
+    let touchEndX = 0;
 
-            .hero-title {
-                font-size: 2rem;
-            }
+    function resetAnimations(element) {
+        const animatedElements = element.querySelectorAll('[class*="fade-in"], [class*="slide-up"], [class*="zoom-in"], [class*="split-text"], [class*="wave-in"], [class*="button-fade"], .card-animate');
+        
+        animatedElements.forEach(el => {
+            const newEl = el.cloneNode(true);
+            el.parentNode.replaceChild(newEl, el);
+        });
+    }
 
-            .hero-description {
-                font-size: 1.125rem;
-            }
-
-            .cards-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
-
-   <script>
-        const slides = document.querySelectorAll('.hero-slide');
-        const slideContents = document.querySelectorAll('.slide-content');
-        const dots = document.querySelectorAll('.dot');
-        let currentSlide = 0;
-        let autoSlideInterval;
-
-        function resetAnimations(element) {
-            // Get all animated elements within the slide content
-            const animatedElements = element.querySelectorAll('[class*="fade-in"], [class*="slide-up"], [class*="zoom-in"], [class*="split-text"], [class*="wave-in"], [class*="button-fade"], .card-animate');
-            
-            animatedElements.forEach(el => {
-                // Force animation restart by cloning and replacing
-                const newEl = el.cloneNode(true);
-                el.parentNode.replaceChild(newEl, el);
-            });
-        }
-
-        function showSlide(index) {
-            // Update background slides
-            slides.forEach((slide, i) => {
-                slide.classList.toggle('active', i === index);
-            });
-
-            // Update content slides
-            slideContents.forEach((content, i) => {
-                if (i === index) {
-                    content.classList.add('active');
-                    // Reset animations for the new slide
-                    setTimeout(() => resetAnimations(content), 50);
-                } else {
-                    content.classList.remove('active');
-                }
-            });
-
-            // Update dots
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-
-            currentSlide = index;
-        }
-
-        function nextSlide() {
-            const next = (currentSlide + 1) % slides.length;
-            showSlide(next);
-        }
-
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(nextSlide, 5000); // 8 seconds to allow animations to complete
-        }
-
-        function resetAutoSlide() {
-            clearInterval(autoSlideInterval);
-            startAutoSlide();
-        }
-
-        // Dot click handlers
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                const slideIndex = parseInt(dot.getAttribute('data-slide'));
-                showSlide(slideIndex);
-                resetAutoSlide();
-            });
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
         });
 
-        // Initialize
-        setTimeout(() => resetAnimations(slideContents[0]), 50);
-        startAutoSlide();
+        slideContents.forEach((content, i) => {
+            if (i === index) {
+                content.classList.add('active');
+                setTimeout(() => resetAnimations(content), 50);
+            } else {
+                content.classList.remove('active');
+            }
+        });
 
-        // Pause on hover
-        const heroSection = document.querySelector('.hero-section');
-        heroSection.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-        heroSection.addEventListener('mouseleave', startAutoSlide);
-    </script>
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        const next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+    }
+
+    function prevSlide() {
+        const prev = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prev);
+    }
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    // Touch/Swipe support for mobile
+    function handleTouchStart(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }
+
+    function handleTouchEnd(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+            resetAutoSlide();
+        }
+    }
+
+    // Dot click handlers
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const slideIndex = parseInt(dot.getAttribute('data-slide'));
+            showSlide(slideIndex);
+            resetAutoSlide();
+        });
+    });
+
+    // Initialize
+    const heroSection = document.querySelector('.hero-section');
+    
+    // Touch events for mobile
+    heroSection.addEventListener('touchstart', handleTouchStart, { passive: true });
+    heroSection.addEventListener('touchend', handleTouchEnd, { passive: true });
+
+    // Mouse events for desktop
+    heroSection.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+    heroSection.addEventListener('mouseleave', startAutoSlide);
+
+    // Start
+    setTimeout(() => resetAnimations(slideContents[0]), 50);
+    startAutoSlide();
+
+    // Prevent double-tap zoom on buttons (iOS)
+    document.querySelectorAll('.btn, .dot').forEach(element => {
+        element.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            element.click();
+        });
+    });
+</script>
 
     
 
@@ -1575,7 +1834,7 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
                 <a href="contact_visit.html" class="bg-white text-primary px-8 py-4 rounded-lg font-cta text-lg transition-all duration-300 hover:bg-gray-100 focus:ring-2 focus:ring-white/50 focus:outline-none">
                     Schedule Care Consultation
                 </a>
-                <a href="rooms_facilities.html" class="bg-accent text-white px-8 py-4 rounded-lg font-cta text-lg transition-all duration-300 hover:bg-accent-700 focus:ring-2 focus:ring-accent-200 focus:outline-none">
+                <a href="facilities.html" class="bg-accent text-white px-8 py-4 rounded-lg font-cta text-lg transition-all duration-300 hover:bg-accent-700 focus:ring-2 focus:ring-accent-200 focus:outline-none">
                     Tour Our Facilities
                 </a>
             </div>
@@ -1728,7 +1987,7 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
                     <ul class="space-y-2">
                         <li><a href="our_care.html" class="text-gray-400 hover:text-white transition-colors duration-200">Our Care Approach</a></li>
                         <li><a href="life_at_danesbrook.html" class="text-gray-400 hover:text-white transition-colors duration-200">Life at Danesbrook</a></li>
-                        <li><a href="rooms_facilities.html" class="text-gray-400 hover:text-white transition-colors duration-200">Rooms & Facilities</a></li>
+                        <li><a href="facilities.html" class="text-gray-400 hover:text-white transition-colors duration-200">Rooms & Facilities</a></li>
                         <li><a href="contact_visit.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact & Visit</a></li>
                     </ul>
                 </div>

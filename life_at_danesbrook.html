@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
 
     
 </head>
@@ -31,7 +33,7 @@
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="our_care.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Our Care</a>
                     <a href="life_at_danesbrook.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Life Here</a>
-                    <a href="rooms_facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
+                    <a href="facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
                     <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
                     <a href="gallery.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Gallery</a>
                     <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
@@ -53,7 +55,7 @@
                 <div class="flex flex-col space-y-4">
                     <a href="our_care.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Our Care</a>
                     <a href="life_at_danesbrook.html" class="text-primary font-semibold">Life Here</a>
-                    <a href="rooms_facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
+                    <a href="facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
                     <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
                     <a href="gallery.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Gallery</a>
                     <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
@@ -64,29 +66,1056 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-primary-50 to-accent-50 overflow-hidden">
-        <div class="absolute inset-0">
-            <img src="https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Residents enjoying community activities" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-            <div class="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-800/60"></div>
+<!-- Hero Section - Life at Danesbrook -->
+<!-- Hero Section - Life at Danesbrook -->
+<section class="hero-section">
+    <!-- Background Carousel -->
+    <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-slide active">
+            <img src="assets/images/LP1.jpg" alt="Daily life at Danesbrook" class="animate-kenburns">
         </div>
+        <div class="hero-slide">
+            <img src="assets/images/LP2.jpg" alt="Social activities" class="animate-kenburns">
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/LP3.jpg" alt="Dining experience" class="animate-kenburns">
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/LP4.jpg" alt="Garden and outdoor spaces" class="animate-kenburns">
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/LP5.jpg" alt="Entertainment and events" class="animate-kenburns">
+        </div>
+        <div class="hero-overlay"></div>
+    </div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-            <div class="max-w-3xl">
-                <h1 class="text-4xl lg:text-6xl font-headline font-bold text-white mb-6 leading-tight">
-                    Life at <span class="text-accent-300">Danesbrook</span>
+    <!-- Gradient overlay for readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-primary-900/70 to-primary-800/50"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <div class="content-wrapper">
+            
+            <!-- Slide 1: Overview - Life at Danesbrook -->
+            <div class="slide-content active" data-slide="0">
+                <h1 class="hero-title">
+                    <span class="fade-in-word delay-1">Life at</span> 
+                    <span class="fade-in-word delay-2 accent">Danesbrook</span> 
+                    <span class="fade-in-word delay-3">House</span>
                 </h1>
-                <p class="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
-                    Every day brings new opportunities for connection, growth, and joy. Discover how our residents thrive in a vibrant community where life continues to flourish.
+                <p class="hero-description fade-in-up">
+                    Experience vibrant community living where every day brings joy, comfort, and meaningful connections in our warm, welcoming home.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button class="btn-primary text-lg px-8 py-4">Join an Activity</button>
-                    <button class="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-cta text-lg transition-all duration-300 hover:bg-white/30 focus:ring-2 focus:ring-white/50 focus:outline-none">
-                        View Calendar
+                <div class="cards-grid">
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-users card-icon"></i>
+                        <p class="card-title">Community</p>
+                        <p class="card-subtitle">Friendships flourish</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-calendar-check card-icon"></i>
+                        <p class="card-title">Activities</p>
+                        <p class="card-subtitle">Daily programs</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-utensils card-icon"></i>
+                        <p class="card-title">Dining</p>
+                        <p class="card-subtitle">Chef-prepared</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-spa card-icon"></i>
+                        <p class="card-title">Wellbeing</p>
+                        <p class="card-subtitle">Holistic approach</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade">
+                        Book a Visit Today
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1">
+                        <i class="fas fa-play-circle"></i>
+                        Virtual Tour
                     </button>
                 </div>
             </div>
+
+            <!-- Slide 2: Daily Activities & Routine -->
+            <div class="slide-content" data-slide="1">
+                <h1 class="hero-title">
+                    <span class="slide-up-word delay-1 accent">Enriching</span> 
+                    <span class="slide-up-word delay-2">Daily</span> 
+                    <span class="slide-up-word delay-3">Activities</span>
+                </h1>
+                <p class="hero-description slide-up-fade">
+                    From morning exercises to evening entertainment, every day is filled with opportunities for engagement and enjoyment.
+                </p>
+                <div class="cards-grid">
+                    <div class="feature-card horizontal-card card-animate">
+                        <i class="fas fa-dumbbell card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Exercise Classes</p>
+                            <p class="card-subtitle">Stay active daily</p>
+                        </div>
+                    </div>
+                    <div class="feature-card horizontal-card card-animate">
+                        <i class="fas fa-palette card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Arts & Crafts</p>
+                            <p class="card-subtitle">Creative sessions</p>
+                        </div>
+                    </div>
+                    <div class="feature-card horizontal-card card-animate">
+                        <i class="fas fa-music card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Music Therapy</p>
+                            <p class="card-subtitle">Weekly concerts</p>
+                        </div>
+                    </div>
+                    <div class="feature-card horizontal-card card-animate">
+                        <i class="fas fa-book-reader card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Book Club</p>
+                            <p class="card-subtitle">Literary gatherings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade">
+                        View Activity Calendar
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1">
+                        <i class="fas fa-download"></i>
+                        Download Schedule
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 3: Dining Experience -->
+            <div class="slide-content" data-slide="2">
+                <h1 class="hero-title">
+                    <span class="zoom-in delay-1 accent">Exceptional</span> 
+                    <span class="zoom-in delay-2">Dining</span> 
+                    <span class="zoom-in delay-3">Experience</span>
+                </h1>
+                <p class="hero-description wave-in">
+                    Savour delicious, nutritious meals prepared fresh daily by our skilled chefs using quality local ingredients.
+                </p>
+                <div class="cards-grid">
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-chef-hat card-icon"></i>
+                        <p class="card-title">Professional Chef</p>
+                        <p class="card-subtitle">Fresh daily meals</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-carrot card-icon"></i>
+                        <p class="card-title">Dietary Options</p>
+                        <p class="card-subtitle">Personalised menus</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-birthday-cake card-icon"></i>
+                        <p class="card-title">Special Occasions</p>
+                        <p class="card-subtitle">Celebration meals</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-coffee card-icon"></i>
+                        <p class="card-title">Café & Bistro</p>
+                        <p class="card-subtitle">Social dining</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade">
+                        View Sample Menus
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1">
+                        <i class="fas fa-utensils"></i>
+                        Dietary Information
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 4: Gardens & Outdoor Spaces -->
+            <div class="slide-content" data-slide="3">
+                <h1 class="hero-title">
+                    <span class="split-text delay-1 accent">Beautiful</span> 
+                    <span class="split-text delay-2">Garden</span> 
+                    <span class="split-text delay-3">Spaces</span>
+                </h1>
+                <p class="hero-description fade-in-up">
+                    Enjoy our landscaped gardens, peaceful courtyards, and sunny terraces perfect for relaxation and outdoor activities.
+                </p>
+                <div class="cards-grid">
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-tree card-icon"></i>
+                        <p class="card-title">Landscaped Gardens</p>
+                        <p class="card-subtitle">Scenic walkways</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-seedling card-icon"></i>
+                        <p class="card-title">Garden Club</p>
+                        <p class="card-subtitle">Grow vegetables</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-sun card-icon"></i>
+                        <p class="card-title">Sun Terraces</p>
+                        <p class="card-subtitle">Outdoor seating</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-umbrella-beach card-icon"></i>
+                        <p class="card-title">BBQ Area</p>
+                        <p class="card-subtitle">Summer events</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade">
+                        Explore Our Grounds
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1">
+                        <i class="fas fa-images"></i>
+                        View Gallery
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 5: Community & Social Life -->
+            <div class="slide-content" data-slide="4">
+                <h1 class="hero-title">
+                    <span class="fade-in-word delay-1 accent">Vibrant</span> 
+                    <span class="fade-in-word delay-2">Community</span> 
+                    <span class="fade-in-word delay-3">Living</span>
+                </h1>
+                <p class="hero-description wave-in">
+                    Build lasting friendships, celebrate special moments, and enjoy a rich social calendar filled with events and gatherings.
+                </p>
+                <div class="cards-grid">
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-theater-masks card-icon"></i>
+                        <p class="card-title">Entertainment</p>
+                        <p class="card-subtitle">Shows & performances</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-bus card-icon"></i>
+                        <p class="card-title">Day Trips</p>
+                        <p class="card-subtitle">Local outings</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-glass-cheers card-icon"></i>
+                        <p class="card-title">Social Events</p>
+                        <p class="card-subtitle">Parties & gatherings</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-heart card-icon"></i>
+                        <p class="card-title">Family Days</p>
+                        <p class="card-subtitle">Welcome visitors</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade">
+                        Join Our Community
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1">
+                        <i class="fas fa-calendar-alt"></i>
+                        Upcoming Events
+                    </button>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+
+    <!-- Carousel Dots with Swipe Indicator -->
+    <div class="carousel-navigation">
+        <div class="carousel-dots">
+            <button class="dot active" data-slide="0" aria-label="Overview"></button>
+            <button class="dot" data-slide="1" aria-label="Activities"></button>
+            <button class="dot" data-slide="2" aria-label="Dining"></button>
+            <button class="dot" data-slide="3" aria-label="Gardens"></button>
+            <button class="dot" data-slide="4" aria-label="Community"></button>
+        </div>
+        <div class="swipe-hint">
+            <span>Swipe for more</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Hero Section - Responsive Height */
+    .hero-section {
+        position: relative;
+        height: 85vh;
+        min-height: 500px;
+        max-height: 700px;
+        overflow: hidden;
+    }
+
+    /* Mobile height adjustments */
+    @media (max-width: 768px) {
+        .hero-section {
+            height: 100vh;
+            min-height: 600px;
+            max-height: 900px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-section {
+            height: calc(100vh - 60px); /* Account for mobile browser UI */
+            min-height: 500px;
+        }
+    }
+
+    /* Background Carousel */
+    .hero-carousel {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-slide {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1000ms ease-in-out;
+    }
+
+    .hero-slide.active {
+        opacity: 1;
+    }
+
+    .hero-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Hero overlay for better text visibility */
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    }
+
+    /* Ken Burns effect - reduced for mobile */
+    @keyframes kenburns {
+        0%   { transform: scale(1.05) translate(0, 0); }
+        100% { transform: scale(1.1) translate(-1%, -1%); }
+    }
+
+    @media (min-width: 769px) {
+        @keyframes kenburns {
+            0%   { transform: scale(1.1) translate(0, 0); }
+            100% { transform: scale(1.2) translate(-2%, -2%); }
+        }
+    }
+
+    .animate-kenburns {
+        animation: kenburns 12s ease-in-out infinite alternate;
+    }
+
+    /* Content Container - Responsive */
+    .hero-content {
+        position: relative;
+        height: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    @media (min-width: 640px) {
+        .hero-content {
+            padding: 0 1.5rem;
+        }
+    }
+
+    .content-wrapper {
+        width: 100%;
+        max-width: 56rem;
+    }
+
+    /* Slide Content Areas - Responsive Height */
+    .slide-content {
+        display: none;
+        opacity: 0;
+        min-height: 450px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    @media (min-width: 640px) {
+        .slide-content {
+            min-height: 500px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .slide-content {
+            min-height: 550px;
+        }
+    }
+
+    .slide-content.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    /* Typography - Mobile Optimized */
+    .hero-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 480px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .hero-title {
+            font-size: 3.75rem;
+        }
+    }
+
+    .hero-title .accent {
+        color: #fbbf24;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 480px) {
+        .hero-description {
+            font-size: 1.125rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .hero-description {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    /* Simplified animations for mobile */
+    @media (max-width: 768px) {
+        /* Reduce animation complexity */
+        @keyframes fadeInWord {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(10px);
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from { 
+                opacity: 0; 
+                transform: scale(0.9);
+            }
+            to { 
+                opacity: 1; 
+                transform: scale(1);
+            }
+        }
+
+        @keyframes splitText {
+            from {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes waveIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-word,
+        .slide-up-word,
+        .zoom-in,
+        .split-text,
+        .wave-in {
+            animation-duration: 0.5s !important;
+        }
+    }
+
+    /* Desktop animations */
+    @media (min-width: 769px) {
+        @keyframes fadeInWord {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes splitText {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes waveIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px) rotate(-5deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(0);
+            }
+        }
+    }
+
+    /* Common animation classes */
+    .fade-in-word {
+        opacity: 0;
+        display: inline-block;
+        animation: fadeInWord 0.8s ease-out forwards;
+    }
+    .fade-in-word.delay-1 { animation-delay: 0.2s; }
+    .fade-in-word.delay-2 { animation-delay: 0.4s; }
+    .fade-in-word.delay-3 { animation-delay: 0.6s; }
+
+    .fade-in-up {
+        opacity: 0;
+        animation: fadeInWord 1s ease-out 0.8s forwards;
+    }
+
+    .slide-up-word {
+        opacity: 0;
+        display: inline-block;
+        animation: slideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    .slide-up-word.delay-1 { animation-delay: 0.15s; }
+    .slide-up-word.delay-2 { animation-delay: 0.3s; }
+    .slide-up-word.delay-3 { animation-delay: 0.45s; }
+
+    .slide-up-fade {
+        opacity: 0;
+        animation: slideUp 0.8s ease-out 0.6s forwards;
+    }
+
+    .zoom-in {
+        opacity: 0;
+        display: inline-block;
+        animation: zoomIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    .zoom-in.delay-1 { animation-delay: 0.2s; }
+    .zoom-in.delay-2 { animation-delay: 0.4s; }
+    .zoom-in.delay-3 { animation-delay: 0.6s; }
+
+    .split-text {
+        opacity: 0;
+        display: inline-block;
+        animation: splitText 0.8s ease-out forwards;
+    }
+    .split-text.delay-1 { animation-delay: 0.2s; }
+    .split-text.delay-2 { animation-delay: 0.4s; }
+    .split-text.delay-3 { animation-delay: 0.6s; }
+
+    .wave-in {
+        opacity: 0;
+        animation: waveIn 1s ease-out 0.8s forwards;
+    }
+
+    /* Cards Grid - Mobile Optimized */
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+        .cards-grid {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .cards-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .feature-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.75rem;
+        padding: 1rem;
+        transition: all 300ms ease;
+        opacity: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    @media (min-width: 640px) {
+        .feature-card {
+            padding: 1.5rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .feature-card.card-animate {
+        animation: zoomIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+
+    .feature-card.card-animate:nth-child(1) { animation-delay: 1s; }
+    .feature-card.card-animate:nth-child(2) { animation-delay: 1.15s; }
+    .feature-card.card-animate:nth-child(3) { animation-delay: 1.3s; }
+    .feature-card.card-animate:nth-child(4) { animation-delay: 1.45s; }
+
+    @media (hover: hover) {
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    /* Touch feedback for mobile */
+    @media (hover: none) {
+        .feature-card:active {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(0.98);
+        }
+    }
+
+    .card-icon {
+        color: #ffffff;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: 640px) {
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    .card-title {
+        color: white;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 0.125rem;
+    }
+
+    @media (min-width: 640px) {
+        .card-title {
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    .card-subtitle {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
+        .card-subtitle {
+            font-size: 0.875rem;
+        }
+    }
+
+    /* Horizontal Cards */
+    .horizontal-card {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
+        .horizontal-card {
+            gap: 1rem;
+        }
+    }
+
+    .horizontal-card .card-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    @media (min-width: 640px) {
+        .horizontal-card .card-icon {
+            font-size: 1.75rem;
+        }
+    }
+
+    .horizontal-card .card-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* CTA Buttons - Mobile Optimized */
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
+        .cta-buttons {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+
+    .btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.75rem;
+        border: none;
+        cursor: pointer;
+        transition: all 300ms ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        opacity: 0;
+        width: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    @media (min-width: 640px) {
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            width: auto;
+        }
+    }
+
+    .btn.button-fade {
+        animation: fadeInWord 1s ease-out 1.6s forwards;
+    }
+
+    .btn.button-fade.delay-1 {
+        animation-delay: 1.8s;
+    }
+
+    .btn-primary {
+        background: #2D5A3D;
+        color: white;
+    }
+
+    @media (hover: hover) {
+        .btn-primary:hover {
+            background: #f59e0b;
+            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.5);
+            transform: translateY(-2px);
+        }
+    }
+
+    @media (hover: none) {
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+    }
+
+    .btn-secondary {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+    @media (hover: hover) {
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    /* Carousel Navigation - Mobile Enhanced */
+    .carousel-navigation {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        z-index: 20;
+    }
+
+    @media (min-width: 640px) {
+        .carousel-navigation {
+            bottom: 2rem;
+        }
+    }
+
+    .carousel-dots {
+        display: flex;
+        gap: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+        transition: all 300ms ease;
+        position: relative;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Increase touch target for mobile */
+    .dot::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+    }
+
+    @media (hover: hover) {
+        .dot:hover {
+            background: #fbbf24;
+            transform: scale(1.1);
+        }
+    }
+
+    .dot.active {
+        background: white;
+        transform: scale(1.3);
+    }
+
+    /* Swipe hint for mobile */
+    .swipe-hint {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.75rem;
+        animation: swipeHint 2s ease-in-out infinite;
+    }
+
+    @media (min-width: 768px) {
+        .swipe-hint {
+            display: none;
+        }
+    }
+
+    @keyframes swipeHint {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(5px); }
+    }
+
+    /* Performance optimizations */
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+
+    /* Prevent horizontal scroll on mobile */
+    @media (max-width: 768px) {
+        .hero-section {
+            overflow-x: hidden;
+        }
+    }
+</style>
+
+   <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    const slideContents = document.querySelectorAll('.slide-content');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+    let autoSlideInterval;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function resetAnimations(element) {
+        const animatedElements = element.querySelectorAll('[class*="fade-in"], [class*="slide-up"], [class*="zoom-in"], [class*="split-text"], [class*="wave-in"], [class*="button-fade"], .card-animate');
+        
+        animatedElements.forEach(el => {
+            const newEl = el.cloneNode(true);
+            el.parentNode.replaceChild(newEl, el);
+        });
+    }
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+
+        slideContents.forEach((content, i) => {
+            if (i === index) {
+                content.classList.add('active');
+                setTimeout(() => resetAnimations(content), 50);
+            } else {
+                content.classList.remove('active');
+            }
+        });
+
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        const next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+    }
+
+    function prevSlide() {
+        const prev = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prev);
+    }
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    // Touch/Swipe support for mobile
+    function handleTouchStart(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }
+
+    function handleTouchEnd(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+            resetAutoSlide();
+        }
+    }
+
+    // Dot click handlers
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const slideIndex = parseInt(dot.getAttribute('data-slide'));
+            showSlide(slideIndex);
+            resetAutoSlide();
+        });
+    });
+
+    // Initialize
+    const heroSection = document.querySelector('.hero-section');
+    
+    // Touch events for mobile
+    heroSection.addEventListener('touchstart', handleTouchStart, { passive: true });
+    heroSection.addEventListener('touchend', handleTouchEnd, { passive: true });
+
+    // Mouse events for desktop
+    heroSection.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+    heroSection.addEventListener('mouseleave', startAutoSlide);
+
+    // Start
+    setTimeout(() => resetAnimations(slideContents[0]), 50);
+    startAutoSlide();
+
+    // Prevent double-tap zoom on buttons (iOS)
+    document.querySelectorAll('.btn, .dot').forEach(element => {
+        element.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            element.click();
+        });
+    });
+</script>
 
     <!-- Activity Filter Bar -->
     <section class="bg-white shadow-subtle">
@@ -150,7 +1179,7 @@
                             </svg>
                         </div>
                     </div>
-                    <img src="https://images.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg" alt="Morning exercise class" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/LA1.jpg" alt="Morning exercise class" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Morning Exercise</h3>
                     <p class="text-text-secondary mb-4">Gentle chair exercises and stretching in the Garden Pavilion. Perfect for all mobility levels.</p>
                     <div class="flex items-center justify-between">
@@ -177,7 +1206,7 @@
                             </svg>
                         </div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Art therapy session" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/LA2.jpg" alt="Art therapy session" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Watercolor Painting</h3>
                     <p class="text-text-secondary mb-4">Express your creativity with guided watercolor painting. All materials provided.</p>
                     <div class="flex items-center justify-between">
@@ -204,7 +1233,7 @@
                             </svg>
                         </div>
                     </div>
-                    <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Garden therapy session" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/LA3.jpg" alt="Garden therapy session" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Autumn Planting</h3>
                     <p class="text-text-secondary mb-4">Plant seasonal flowers and herbs in our therapeutic garden spaces.</p>
                     <div class="flex items-center justify-between">
@@ -231,7 +1260,7 @@
                             </svg>
                         </div>
                     </div>
-                    <img src="https://images.pixabay.com/photo/2017/07/31/11/22/people-2557396_1280.jpg" alt="Music therapy session" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/LA4.jpg" alt="Music therapy session" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Sing-Along Session</h3>
                     <p class="text-text-secondary mb-4">Join our music therapist for classic songs and musical memories.</p>
                     <div class="flex items-center justify-between">
@@ -258,7 +1287,7 @@
                             </svg>
                         </div>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Afternoon tea social hour" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/LA5.jpg" alt="Afternoon tea social hour" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Afternoon Tea & Chat</h3>
                     <p class="text-text-secondary mb-4">Enjoy homemade treats and conversation with friends in our cozy lounge.</p>
                     <div class="flex items-center justify-between">
@@ -285,7 +1314,7 @@
                             </svg>
                         </div>
                     </div>
-                    <img src="https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Evening entertainment" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/LA6.jpg" alt="Evening entertainment" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Classic Film Night</h3>
                     <p class="text-text-secondary mb-4">Tonight's feature: "Casablanca" with popcorn and refreshments.</p>
                     <div class="flex items-center justify-between">
@@ -303,105 +1332,7 @@
         </div>
     </section>
 
-    <!-- Resident Spotlights -->
-    <section class="py-16 lg:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
-                    Resident <span class="text-primary">Spotlights</span>
-                </h2>
-                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
-                    Meet some of our remarkable residents and discover how they're thriving in our vibrant community.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Featured Resident 1 -->
-                <div class="card">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/3">
-                            <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Harold in the garden" class="w-full h-64 md:h-full object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        </div>
-                        <div class="md:w-2/3">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-2xl font-headline font-semibold text-text-primary mr-3">Harold Thompson, 78</h3>
-                                <div class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm font-semibold">
-                                    Garden Enthusiast
-                                </div>
-                            </div>
-                            <p class="text-text-secondary mb-4 leading-relaxed">
-                                "I've been here for six months now, and I can honestly say it's been wonderful. The garden reminds me of my own back home, and I've made such good friends. Every morning, I help tend to the vegetable patch, and in the afternoons, I enjoy chess with Arthur."
-                            </p>
-                            <div class="space-y-3">
-                                <div class="flex items-center text-sm text-text-secondary">
-                                    <svg class="h-4 w-4 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span><strong>Favorite Activities:</strong> Gardening, Chess, Morning Walks</span>
-                                </div>
-                                <div class="flex items-center text-sm text-text-secondary">
-                                    <svg class="h-4 w-4 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span><strong>Background:</strong> Retired Teacher & Avid Gardener</span>
-                                </div>
-                                <div class="flex items-center text-sm text-text-secondary">
-                                    <svg class="h-4 w-4 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span><strong>Recent Achievement:</strong> Won the Autumn Garden Competition</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Featured Resident 2 -->
-                <div class="card">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/3">
-                            <img src="https://images.unsplash.com/photo-1594824720837-6d0c7e9e1b3c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Margaret reading" class="w-full h-64 md:h-full object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        </div>
-                        <div class="md:w-2/3">
-                            <div class="flex items-center mb-4">
-                                <h3 class="text-2xl font-headline font-semibold text-text-primary mr-3">Margaret Davies, 82</h3>
-                                <div class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm font-semibold">
-                                    Book Club Leader
-                                </div>
-                            </div>
-                            <p class="text-text-secondary mb-4 leading-relaxed">
-                                "The staff here are like family to me. They remember my stories and always have time for a chat. I've started a book club, and we meet every Thursday. It's wonderful to share stories and discuss literature with fellow book lovers."
-                            </p>
-                            <div class="space-y-3">
-                                <div class="flex items-center text-sm text-text-secondary">
-                                    <svg class="h-4 w-4 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span><strong>Favorite Activities:</strong> Reading, Book Club, Knitting Circle</span>
-                                </div>
-                                <div class="flex items-center text-sm text-text-secondary">
-                                    <svg class="h-4 w-4 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span><strong>Background:</strong> Former Librarian & Literature Enthusiast</span>
-                                </div>
-                                <div class="flex items-center text-sm text-text-secondary">
-                                    <svg class="h-4 w-4 mr-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span><strong>Recent Achievement:</strong> Organized Poetry Reading Evening</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <button class="btn-secondary">Meet More Residents</button>
-            </div>
-        </div>
-    </section>
+   
 
     <!-- Weekly Activity Calendar -->
     <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-accent-50">
@@ -541,298 +1472,94 @@
         </div>
     </section>
 
-    <!-- Hobby Groups -->
-    <section class="py-16 lg:py-24 bg-white">
+
+
+   <!-- Live Social Feed -->
+    <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-accent-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
-                    Hobby <span class="text-primary">Groups</span>
+                    Life at <span class="text-primary">Danesbrook</span>
                 </h2>
                 <p class="text-lg text-text-secondary max-w-2xl mx-auto">
-                    Join like-minded residents in pursuing shared interests and developing new skills together.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Gardening Club -->
-                <div class="card group hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-4">
-                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Gardening club members" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-semibold">
-                            12 Members
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Gardening Club</h3>
-                    <p class="text-text-secondary mb-4">
-                        Tend to our beautiful gardens, grow vegetables, and share gardening wisdom. Meets every Tuesday and Friday morning.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center text-sm text-primary">
-                            <svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
-                            </svg>
-                            Tue & Fri, 9:00 AM
-                        </div>
-                        <button class="text-primary hover:text-primary-700 font-semibold text-sm">Join Group</button>
-                    </div>
-                </div>
-
-                <!-- Book Club -->
-                <div class="card group hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-4">
-                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Book club discussion" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-3 right-3 bg-secondary text-white px-2 py-1 rounded-full text-xs font-semibold">
-                            8 Members
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Book Club</h3>
-                    <p class="text-text-secondary mb-4">
-                        Explore literature together and engage in thoughtful discussions. Currently reading "The Thursday Murder Club."
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center text-sm text-primary">
-                            <svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
-                            </svg>
-                            Thursday, 11:00 AM
-                        </div>
-                        <button class="text-primary hover:text-primary-700 font-semibold text-sm">Join Group</button>
-                    </div>
-                </div>
-
-                <!-- Arts & Crafts -->
-                <div class="card group hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-4">
-                        <img src="https://images.pixabay.com/photo/2017/09/07/08/54/money-2724241_1280.jpg" alt="Arts and crafts session" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-3 right-3 bg-accent text-white px-2 py-1 rounded-full text-xs font-semibold">
-                            15 Members
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Arts & Crafts</h3>
-                    <p class="text-text-secondary mb-4">
-                        Express creativity through various art forms including painting, knitting, and seasonal decorations.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center text-sm text-primary">
-                            <svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
-                            </svg>
-                            Mon & Wed, 2:00 PM
-                        </div>
-                        <button class="text-primary hover:text-primary-700 font-semibold text-sm">Join Group</button>
-                    </div>
-                </div>
-
-                <!-- Music Group -->
-                <div class="card group hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-4">
-                        <img src="https://images.pixabay.com/photo/2017/07/31/11/22/people-2557396_1280.jpg" alt="Music group performance" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-semibold">
-                            10 Members
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Music Ensemble</h3>
-                    <p class="text-text-secondary mb-4">
-                        Share the joy of music through singing, playing instruments, and performing for the community.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center text-sm text-primary">
-                            <svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
-                            </svg>
-                            Friday, 3:00 PM
-                        </div>
-                        <button class="text-primary hover:text-primary-700 font-semibold text-sm">Join Group</button>
-                    </div>
-                </div>
-
-                <!-- Walking Group -->
-                <div class="card group hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-4">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Walking group in gardens" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-3 right-3 bg-secondary text-white px-2 py-1 rounded-full text-xs font-semibold">
-                            18 Members
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Walking Group</h3>
-                    <p class="text-text-secondary mb-4">
-                        Enjoy gentle walks through our gardens and local areas, promoting health and social connection.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center text-sm text-primary">
-                            <svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
-                            </svg>
-                            Daily, 10:00 AM
-                        </div>
-                        <button class="text-primary hover:text-primary-700 font-semibold text-sm">Join Group</button>
-                    </div>
-                </div>
-
-                <!-- Cooking Club -->
-                <div class="card group hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-4">
-                        <img src="https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cooking club session" class="w-full h-48 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-3 right-3 bg-accent text-white px-2 py-1 rounded-full text-xs font-semibold">
-                            6 Members
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Cooking Club</h3>
-                    <p class="text-text-secondary mb-4">
-                        Share recipes, prepare meals together, and enjoy the fruits of your culinary creativity.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center text-sm text-primary">
-                            <svg class="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
-                            </svg>
-                            Wednesday, 2:30 PM
-                        </div>
-                        <button class="text-primary hover:text-primary-700 font-semibold text-sm">Join Group</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Media Feed -->
-    <section class="py-16 lg:py-24 bg-surface">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
-                    Follow Our <span class="text-primary">Daily Life</span>
-                </h2>
-                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
-                    Stay connected with our community through our social media feeds showcasing daily activities and special moments.
+                    Follow our daily activities and community moments through our social media feeds.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Social Post 1 -->
                 <div class="bg-white rounded-xl shadow-subtle overflow-hidden hover:shadow-card transition-shadow duration-300">
-                    <img src="https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Morning exercise class" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/Activity1.png" alt="Morning exercise class" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <div class="p-4">
                         <div class="flex items-center mb-2">
                             <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-2">
-                                <span class="text-white text-xs font-bold">DC</span>
+                                <span class="text-white text-xs font-bold">DH</span>
                             </div>
                             <div>
                                 <div class="font-semibold text-sm">Danesbrook House</div>
                                 <div class="text-xs text-text-secondary">2 hours ago</div>
                             </div>
                         </div>
-                        <p class="text-sm text-text-primary">Starting the week strong! 💪 Our morning exercise class is always full of energy and laughter. #ActiveAging #MondayMotivation</p>
-                        <div class="flex items-center mt-3 text-xs text-text-secondary">
-                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="mr-3">24 likes</span>
-                            <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                            </svg>
-                            <span>8 comments</span>
-                        </div>
+                        <p class="text-sm text-text-primary">Thank you to Sabrina for giving us a fun hour of sing alongs and laughs. This session was based on the theme of animals ❤️☺️</p>
                     </div>
                 </div>
 
                 <!-- Social Post 2 -->
                 <div class="bg-white rounded-xl shadow-subtle overflow-hidden hover:shadow-card transition-shadow duration-300">
-                    <img src="https://images.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg" alt="Garden therapy session" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/Activity2.png" alt="Garden therapy session" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <div class="p-4">
                         <div class="flex items-center mb-2">
                             <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-2">
-                                <span class="text-white text-xs font-bold">DC</span>
+                                <span class="text-white text-xs font-bold">DH</span>
                             </div>
                             <div>
                                 <div class="font-semibold text-sm">Danesbrook House</div>
                                 <div class="text-xs text-text-secondary">5 hours ago</div>
                             </div>
                         </div>
-                        <p class="text-sm text-text-primary">Beautiful autumn flowers planted today! 🌻 Harold's green thumb is inspiring everyone in our garden therapy group. #GardenTherapy #AutumnColors</p>
-                        <div class="flex items-center mt-3 text-xs text-text-secondary">
-                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="mr-3">31 likes</span>
-                            <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                            </svg>
-                            <span>12 comments</span>
-                        </div>
+                        <p class="text-sm text-text-primary">We did a bit of up cycling craft today; colour sorting buttons and applying them to paper to turn it into a piece of art 🎨❤️</p>
                     </div>
                 </div>
 
                 <!-- Social Post 3 -->
                 <div class="bg-white rounded-xl shadow-subtle overflow-hidden hover:shadow-card transition-shadow duration-300">
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Afternoon tea time" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/Activity3.png" alt="Afternoon tea time" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <div class="p-4">
                         <div class="flex items-center mb-2">
                             <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-2">
-                                <span class="text-white text-xs font-bold">DC</span>
+                                <span class="text-white text-xs font-bold">DH</span>
                             </div>
                             <div>
                                 <div class="font-semibold text-sm">Danesbrook House</div>
                                 <div class="text-xs text-text-secondary">1 day ago</div>
                             </div>
                         </div>
-                        <p class="text-sm text-text-primary">Sunday afternoon tea with homemade scones! ☕ Nothing beats good company and delicious treats. #AfternoonTea #SundayTradition</p>
-                        <div class="flex items-center mt-3 text-xs text-text-secondary">
-                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="mr-3">42 likes</span>
-                            <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                            </svg>
-                            <span>15 comments</span>
-                        </div>
+                        <p class="text-sm text-text-primary">We enjoyed a sing along this morning, dancing away the rain 🥁🎼😀</p>
                     </div>
                 </div>
 
                 <!-- Social Post 4 -->
                 <div class="bg-white rounded-xl shadow-subtle overflow-hidden hover:shadow-card transition-shadow duration-300">
-                    <img src="https://images.pixabay.com/photo/2017/07/31/11/22/people-2557396_1280.jpg" alt="Music therapy session" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <img src="assets/images/Activity4.png" alt="Music therapy session" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                     <div class="p-4">
                         <div class="flex items-center mb-2">
                             <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-2">
-                                <span class="text-white text-xs font-bold">DC</span>
+                                <span class="text-white text-xs font-bold">DH</span>
                             </div>
                             <div>
                                 <div class="font-semibold text-sm">Danesbrook House</div>
                                 <div class="text-xs text-text-secondary">2 days ago</div>
                             </div>
                         </div>
-                        <p class="text-sm text-text-primary">Friday evening music session was magical! 🎵 Arthur's piano playing had everyone singing along to the classics. #MusicTherapy #FridayEvening</p>
-                        <div class="flex items-center mt-3 text-xs text-text-secondary">
-                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="mr-3">38 likes</span>
-                            <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                            </svg>
-                            <span>9 comments</span>
-                        </div>
+                        <p class="text-sm text-text-primary">We welcomed back Hiroko yesterday, who provided a relaxing hour of music and relaxation 🎼❤️</p>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-8">
-                <div class="flex justify-center space-x-4">
-                    <button class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-subtle flex items-center">
-                        <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                        </svg>
-                        Follow on Twitter
-                    </button>
-                    <button class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-subtle flex items-center">
-                        <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M7.75 2C4.679 2 2 4.679 2 7.75v8.5C2 19.321 4.679 22 7.75 22h8.5c3.071 0 5.75-2.679 5.75-5.75v-8.5C22 4.679 19.321 2 16.25 2h-8.5zm0 1.5h8.5c2.356 0 4.25 1.894 4.25 4.25v8.5c0 2.356-1.894 4.25-4.25 4.25h-8.5A4.252 4.252 0 0 1 3.5 16.25v-8.5C3.5 5.394 5.394 3.5 7.75 3.5zM18 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 1.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z"/>
-</svg>
-
-                        Follow on Instagram
-                    </button>
-                </div>
+                <button class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-subtle">
+                   <a href="https://web.facebook.com/danesbrookhouseresidentialcare/">Follow Us on Facebook</a> 
+                </button>
             </div>
         </div>
     </section>
@@ -1003,7 +1730,7 @@
                     <ul class="space-y-2">
                         <li><a href="our_care.html" class="text-gray-400 hover:text-white transition-colors duration-200">Our Care Approach</a></li>
                         <li><a href="life_at_danesbrook.html" class="text-gray-400 hover:text-white transition-colors duration-200">Life at Danesbrook</a></li>
-                        <li><a href="rooms_facilities.html" class="text-gray-400 hover:text-white transition-colors duration-200">Rooms & Facilities</a></li>
+                        <li><a href="facilities.html" class="text-gray-400 hover:text-white transition-colors duration-200">Rooms & Facilities</a></li>
                         <li><a href="contact_visit.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact & Visit</a></li>
                     </ul>
                 </div>

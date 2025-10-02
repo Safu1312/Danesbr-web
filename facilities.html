@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facilities - Danesbrook House</title>
+    <meta name="description" content="Explore our beautiful rooms and world-class facilities at Danesbrook House. Virtual tours, pricing transparency, and comprehensive amenity details for your peace of mind." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+             <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS (Animate On Scroll) for subtle fades / slide-ups -->
+  <link  href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => AOS.init({ once:true, duration:700}));</script>
+
+  <!-- Heroicons CDN (solid) -->
+  <script src="https://unpkg.com/heroicons@2.0.18/dist/heroicons.min.js"></script>
+
+
+</head>
+<body class="font-body bg-background">
+ 
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/CCH_logo.png" alt="Danesbrook-logo" style="height: 125px; width: 150px; padding-top: 10px; " />
+                        <div class="ml-3">
+                            <h1 class="text-xl font-headline font-bold text-primary" style="margin-left: -20px; font-size:x-large;" >Danesbrook House</h1>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="our_care.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Our Care</a>
+                    <a href="life_at_danesbrook.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Life Here</a>
+                    <a href="facilities.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Facilities</a>
+                    <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
+                    <a href="gallery.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Gallery</a>
+                    <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
+                    <button class="btn-primary">Book a Tour</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="text-text-primary hover:text-primary p-2">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="our_care.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Our Care</a>
+                    <a href="life_at_danesbrook.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Life Here</a>
+                    <a href="facilities.html" class="text-primary font-semibold">Facilities</a>
+                    <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
+                    <a href="gallery.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Gallery</a>
+                    <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
+                    <button class="btn-primary w-full">Book a Tour</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+   <!-- Hero Section - Facilities at Danesbrook -->
+<section class="hero-section">
+    <!-- Background Carousel -->
+    <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-slide active">
+            <img src="assets/images/FAC1.jpg" alt="Danesbrook House facilities" class="animate-kenburns">
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/FAC2.jpg" alt="Garden and outdoor spaces" class="animate-kenburns">
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/FAC3.jpg" alt="Common areas and lounges" class="animate-kenburns">
+        </div>
+        <div class="hero-slide">
+            <img src="assets/images/FAC4.jpg" alt="Bedrooms and private spaces" class="animate-kenburns">
+        </div>
+        <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Gradient overlay for readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-primary-900/70 to-primary-800/50"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <div class="content-wrapper">
+            
+            <!-- Slide 1: Facilities Overview - Fade In Animation -->
+            <div class="slide-content active" data-slide="0">
+                <h1 class="hero-title">
+                    <span class="fade-in-word delay-1">Our</span> 
+                    <span class="fade-in-word delay-2 accent">Beautiful</span> 
+                    <span class="fade-in-word delay-3">Facilities</span>
+                </h1>
+                <p class="hero-description fade-in-up">
+                    Danesbrook House is a beautifully converted home with stunning views over mature gardens, designed to provide a pleasant, safe, and warm living environment that feels truly like home.
+                </p>
+                <div class="cards-grid">
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-tree card-icon"></i>
+                        <p class="card-title">Gardens</p>
+                        <p class="card-subtitle">Landscaped grounds</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-couch card-icon"></i>
+                        <p class="card-title">Living Spaces</p>
+                        <p class="card-subtitle">Comfortable lounges</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-bed card-icon"></i>
+                        <p class="card-title">Bedrooms</p>
+                        <p class="card-subtitle">Personal havens</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-utensils card-icon"></i>
+                        <p class="card-title">Dining</p>
+                        <p class="card-subtitle">Restaurant quality</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade">
+                        Schedule a Tour
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1">
+                        <i class="fas fa-images"></i>
+                        View Gallery
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 2: Gardens & Outdoor Spaces - Slide Up Animation -->
+            <div class="slide-content" data-slide="1">
+                <h1 class="hero-title">
+                    <span class="slide-up-word delay-1 accent">Stunning</span> 
+                    <span class="slide-up-word delay-2">Garden</span> 
+                    <span class="slide-up-word delay-3">Spaces</span>
+                </h1>
+                <p class="hero-description slide-up-fade">
+                    Our beautiful enclosed gardens are safe and accessible, featuring mature plants, walking paths, gazebos, and sensory gardens that provide year-round enjoyment and therapeutic value for our residents.
+                </p>
+                <div class="cards-grid">
+                    <div class="feature-card horizontal-card card-animate">
+                        <i class="fas fa-walking card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Walking Paths</p>
+                            <p class="card-subtitle">Safe circuits</p>
+                        </div>
+                    </div>
+                    <div class="feature-card horizontal-card card-animate">
+                        <i class="fas fa-seedling card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Garden Club</p>
+                            <p class="card-subtitle">Growing activities</p>
+                        </div>
+                    </div>
+                    <div class="feature-card horizontal-card card-animate">
+                        <i class="fas fa-umbrella-beach card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Gazebos</p>
+                            <p class="card-subtitle">Shaded seating</p>
+                        </div>
+                    </div>
+                    <div class="feature-card horizontal-card card-animate">
+                        <i class="fas fa-sun card-icon"></i>
+                        <div class="card-content">
+                            <p class="card-title">Sun Terraces</p>
+                            <p class="card-subtitle">Outdoor relaxation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade">
+                        Explore Our Gardens
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1">
+                        <i class="fas fa-calendar-check"></i>
+                        Garden Activities
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 3: Common Spaces - Zoom In Animation -->
+            <div class="slide-content" data-slide="2">
+                <h1 class="hero-title">
+                    <span class="zoom-in delay-1 accent">Welcoming</span> 
+                    <span class="zoom-in delay-2">Common</span> 
+                    <span class="zoom-in delay-3">Areas</span>
+                </h1>
+                <p class="hero-description wave-in">
+                    Our spacious living rooms and elegant dining areas form the heart of Danesbrook House, providing warm, secure spaces for activities, socialising, and creating a true sense of home and community.
+                </p>
+                <div class="cards-grid">
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-tv card-icon"></i>
+                        <p class="card-title">TV Lounges</p>
+                        <p class="card-subtitle">Entertainment areas</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-book card-icon"></i>
+                        <p class="card-title">Library</p>
+                        <p class="card-subtitle">Quiet reading</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-coffee card-icon"></i>
+                        <p class="card-title">Café Area</p>
+                        <p class="card-subtitle">Social hub</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-palette card-icon"></i>
+                        <p class="card-title">Activity Room</p>
+                        <p class="card-subtitle">Arts & crafts</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade">
+                        View Common Areas
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1">
+                        <i class="fas fa-play-circle"></i>
+                        Virtual Tour
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 4: Bedrooms - Split Text Animation -->
+            <div class="slide-content" data-slide="3">
+                <h1 class="hero-title">
+                    <span class="split-text delay-1 accent">Personal</span> 
+                    <span class="split-text delay-2">Private</span> 
+                    <span class="split-text delay-3">Bedrooms</span>
+                </h1>
+                <p class="hero-description fade-in-up">
+                    A variety of comfortable bedrooms, all furnished to meet care needs while allowing residents to personalise their space with cherished belongings, creating a true sanctuary that feels like home.
+                </p>
+                <div class="cards-grid">
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-door-open card-icon"></i>
+                        <p class="card-title">Room Types</p>
+                        <p class="card-subtitle">Various options</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-bath card-icon"></i>
+                        <p class="card-title">En-Suite</p>
+                        <p class="card-subtitle">Private bathrooms</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-user-cog card-icon"></i>
+                        <p class="card-title">Personalisation</p>
+                        <p class="card-subtitle">Make it yours</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-bell card-icon"></i>
+                        <p class="card-title">Call Systems</p>
+                        <p class="card-subtitle">24/7 assistance</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade">
+                        Check Room Availability
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1">
+                        <i class="fas fa-download"></i>
+                        Room Brochure
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Carousel Dots with Swipe Indicator -->
+    <div class="carousel-navigation">
+        <div class="carousel-dots">
+            <button class="dot active" data-slide="0" aria-label="Facilities Overview"></button>
+            <button class="dot" data-slide="1" aria-label="Gardens"></button>
+            <button class="dot" data-slide="2" aria-label="Common Areas"></button>
+            <button class="dot" data-slide="3" aria-label="Bedrooms"></button>
+        </div>
+        <div class="swipe-hint">
+            <span>Swipe for more</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Hero Section - Responsive Height */
+    .hero-section {
+        position: relative;
+        height: 85vh;
+        min-height: 500px;
+        max-height: 700px;
+        overflow: hidden;
+    }
+
+    /* Mobile height adjustments */
+    @media (max-width: 768px) {
+        .hero-section {
+            height: 100vh;
+            min-height: 600px;
+            max-height: 900px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-section {
+            height: calc(100vh - 60px); /* Account for mobile browser UI */
+            min-height: 500px;
+        }
+    }
+
+    /* Background Carousel */
+    .hero-carousel {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-slide {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1000ms ease-in-out;
+    }
+
+    .hero-slide.active {
+        opacity: 1;
+    }
+
+    .hero-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Hero overlay for better text visibility */
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    }
+
+    /* Ken Burns effect - reduced for mobile */
+    @keyframes kenburns {
+        0%   { transform: scale(1.05) translate(0, 0); }
+        100% { transform: scale(1.1) translate(-1%, -1%); }
+    }
+
+    @media (min-width: 769px) {
+        @keyframes kenburns {
+            0%   { transform: scale(1.1) translate(0, 0); }
+            100% { transform: scale(1.2) translate(-2%, -2%); }
+        }
+    }
+
+    .animate-kenburns {
+        animation: kenburns 12s ease-in-out infinite alternate;
+    }
+
+    /* Content Container - Responsive */
+    .hero-content {
+        position: relative;
+        height: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    @media (min-width: 640px) {
+        .hero-content {
+            padding: 0 1.5rem;
+        }
+    }
+
+    .content-wrapper {
+        width: 100%;
+        max-width: 56rem;
+    }
+
+    /* Slide Content Areas - Responsive Height */
+    .slide-content {
+        display: none;
+        opacity: 0;
+        min-height: 450px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    @media (min-width: 640px) {
+        .slide-content {
+            min-height: 500px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .slide-content {
+            min-height: 550px;
+        }
+    }
+
+    .slide-content.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    /* Typography - Mobile Optimized */
+    .hero-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 480px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .hero-title {
+            font-size: 3.75rem;
+        }
+    }
+
+    .hero-title .accent {
+        color: #fbbf24;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 480px) {
+        .hero-description {
+            font-size: 1.125rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .hero-description {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    /* Simplified animations for mobile */
+    @media (max-width: 768px) {
+        /* Reduce animation complexity */
+        @keyframes fadeInWord {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(10px);
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from { 
+                opacity: 0; 
+                transform: scale(0.9);
+            }
+            to { 
+                opacity: 1; 
+                transform: scale(1);
+            }
+        }
+
+        @keyframes splitText {
+            from {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes waveIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-word,
+        .slide-up-word,
+        .zoom-in,
+        .split-text,
+        .wave-in {
+            animation-duration: 0.5s !important;
+        }
+    }
+
+    /* Desktop animations */
+    @media (min-width: 769px) {
+        @keyframes fadeInWord {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes splitText {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes waveIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px) rotate(-5deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(0);
+            }
+        }
+    }
+
+    /* Common animation classes */
+    .fade-in-word {
+        opacity: 0;
+        display: inline-block;
+        animation: fadeInWord 0.8s ease-out forwards;
+    }
+    .fade-in-word.delay-1 { animation-delay: 0.2s; }
+    .fade-in-word.delay-2 { animation-delay: 0.4s; }
+    .fade-in-word.delay-3 { animation-delay: 0.6s; }
+
+    .fade-in-up {
+        opacity: 0;
+        animation: fadeInWord 1s ease-out 0.8s forwards;
+    }
+
+    .slide-up-word {
+        opacity: 0;
+        display: inline-block;
+        animation: slideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    .slide-up-word.delay-1 { animation-delay: 0.15s; }
+    .slide-up-word.delay-2 { animation-delay: 0.3s; }
+    .slide-up-word.delay-3 { animation-delay: 0.45s; }
+
+    .slide-up-fade {
+        opacity: 0;
+        animation: slideUp 0.8s ease-out 0.6s forwards;
+    }
+
+    .zoom-in {
+        opacity: 0;
+        display: inline-block;
+        animation: zoomIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    .zoom-in.delay-1 { animation-delay: 0.2s; }
+    .zoom-in.delay-2 { animation-delay: 0.4s; }
+    .zoom-in.delay-3 { animation-delay: 0.6s; }
+
+    .split-text {
+        opacity: 0;
+        display: inline-block;
+        animation: splitText 0.8s ease-out forwards;
+    }
+    .split-text.delay-1 { animation-delay: 0.2s; }
+    .split-text.delay-2 { animation-delay: 0.4s; }
+    .split-text.delay-3 { animation-delay: 0.6s; }
+
+    .wave-in {
+        opacity: 0;
+        animation: waveIn 1s ease-out 0.8s forwards;
+    }
+
+    /* Cards Grid - Mobile Optimized */
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+        .cards-grid {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .cards-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .feature-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.75rem;
+        padding: 1rem;
+        transition: all 300ms ease;
+        opacity: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    @media (min-width: 640px) {
+        .feature-card {
+            padding: 1.5rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .feature-card.card-animate {
+        animation: zoomIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+
+    .feature-card.card-animate:nth-child(1) { animation-delay: 1s; }
+    .feature-card.card-animate:nth-child(2) { animation-delay: 1.15s; }
+    .feature-card.card-animate:nth-child(3) { animation-delay: 1.3s; }
+    .feature-card.card-animate:nth-child(4) { animation-delay: 1.45s; }
+
+    @media (hover: hover) {
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    /* Touch feedback for mobile */
+    @media (hover: none) {
+        .feature-card:active {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(0.98);
+        }
+    }
+
+    .card-icon {
+        color: #ffffff;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: 640px) {
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    .card-title {
+        color: white;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 0.125rem;
+    }
+
+    @media (min-width: 640px) {
+        .card-title {
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    .card-subtitle {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
+        .card-subtitle {
+            font-size: 0.875rem;
+        }
+    }
+
+    /* Horizontal Cards */
+    .horizontal-card {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
+        .horizontal-card {
+            gap: 1rem;
+        }
+    }
+
+    .horizontal-card .card-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    @media (min-width: 640px) {
+        .horizontal-card .card-icon {
+            font-size: 1.75rem;
+        }
+    }
+
+    .horizontal-card .card-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* CTA Buttons - Mobile Optimized */
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
+        .cta-buttons {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+
+    .btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.75rem;
+        border: none;
+        cursor: pointer;
+        transition: all 300ms ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        opacity: 0;
+        width: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    @media (min-width: 640px) {
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            width: auto;
+        }
+    }
+
+    .btn.button-fade {
+        animation: fadeInWord 1s ease-out 1.6s forwards;
+    }
+
+    .btn.button-fade.delay-1 {
+        animation-delay: 1.8s;
+    }
+
+    
+
+    @media (hover: hover) {
+        .btn-primary:hover {
+            background: #f59e0b;
+            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.5);
+            transform: translateY(-2px);
+        }
+    }
+
+    @media (hover: none) {
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+    }
+
+    .btn-secondary {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+    @media (hover: hover) {
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    /* Carousel Navigation - Mobile Enhanced */
+    .carousel-navigation {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        z-index: 20;
+    }
+
+    @media (min-width: 640px) {
+        .carousel-navigation {
+            bottom: 2rem;
+        }
+    }
+
+    .carousel-dots {
+        display: flex;
+        gap: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        border: none;
+        cursor: pointer;
+        transition: all 300ms ease;
+        position: relative;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Increase touch target for mobile */
+    .dot::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+    }
+
+    @media (hover: hover) {
+        .dot:hover {
+            background: #fbbf24;
+            transform: scale(1.1);
+        }
+    }
+
+    .dot.active {
+        background: white;
+        transform: scale(1.3);
+    }
+
+    /* Swipe hint for mobile */
+    .swipe-hint {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.75rem;
+        animation: swipeHint 2s ease-in-out infinite;
+    }
+
+    @media (min-width: 768px) {
+        .swipe-hint {
+            display: none;
+        }
+    }
+
+    @keyframes swipeHint {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(5px); }
+    }
+
+    /* Performance optimizations */
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+
+    /* Prevent horizontal scroll on mobile */
+    @media (max-width: 768px) {
+        .hero-section {
+            overflow-x: hidden;
+        }
+    }
+</style>
+
+<script>
+    const slides = document.querySelectorAll('.hero-slide');
+    const slideContents = document.querySelectorAll('.slide-content');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+    let autoSlideInterval;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function resetAnimations(element) {
+        const animatedElements = element.querySelectorAll('[class*="fade-in"], [class*="slide-up"], [class*="zoom-in"], [class*="split-text"], [class*="wave-in"], [class*="button-fade"], .card-animate');
+        
+        animatedElements.forEach(el => {
+            const newEl = el.cloneNode(true);
+            el.parentNode.replaceChild(newEl, el);
+        });
+    }
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+
+        slideContents.forEach((content, i) => {
+            if (i === index) {
+                content.classList.add('active');
+                setTimeout(() => resetAnimations(content), 50);
+            } else {
+                content.classList.remove('active');
+            }
+        });
+
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        const next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+    }
+
+    function prevSlide() {
+        const prev = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prev);
+    }
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    // Touch/Swipe support for mobile
+    function handleTouchStart(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }
+
+    function handleTouchEnd(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+            resetAutoSlide();
+        }
+    }
+
+    // Dot click handlers
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const slideIndex = parseInt(dot.getAttribute('data-slide'));
+            showSlide(slideIndex);
+            resetAutoSlide();
+        });
+    });
+
+    // Initialize
+    const heroSection = document.querySelector('.hero-section');
+    
+    // Touch events for mobile
+    heroSection.addEventListener('touchstart', handleTouchStart, { passive: true });
+    heroSection.addEventListener('touchend', handleTouchEnd, { passive: true });
+
+    // Mouse events for desktop
+    heroSection.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+    heroSection.addEventListener('mouseleave', startAutoSlide);
+
+    // Start
+    setTimeout(() => resetAnimations(slideContents[0]), 50);
+    startAutoSlide();
+
+    // Prevent double-tap zoom on buttons (iOS)
+    document.querySelectorAll('.btn, .dot').forEach(element => {
+        element.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            element.click();
+        });
+    });
+</script>
+
+    <!-- Quick Navigation -->
+    <section class="bg-white shadow-subtle">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="#room-types" class="flex items-center justify-center p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors duration-200 group">
+                    <svg class="h-6 w-6 text-primary mr-3 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v0"/>
+                    </svg>
+                    <span class="font-semibold text-primary text-sm">Room Types</span>
+                </a>
+                <a href="#facilities" class="flex items-center justify-center p-4 bg-secondary-50 rounded-lg hover:bg-secondary-100 transition-colors duration-200 group">
+                    <svg class="h-6 w-6 text-secondary mr-3 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                    <span class="font-semibold text-secondary text-sm">Facilities</span>
+                </a>
+                <a href="#pricing" class="flex items-center justify-center p-4 bg-accent-50 rounded-lg hover:bg-accent-100 transition-colors duration-200 group">
+                    <svg class="h-6 w-6 text-accent mr-3 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                    </svg>
+                    <span class="font-semibold text-accent text-sm">Pricing</span>
+                </a>
+                <a href="#virtual-tour" class="flex items-center justify-center p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors duration-200 group">
+                    <svg class="h-6 w-6 text-primary mr-3 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                    </svg>
+                    <span class="font-semibold text-primary text-sm">Virtual Tour</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+ <!-- Sticky “Book a Visit” CTA (desktop only) -->
+  <a href="#visit" class="hidden lg:flex fixed top-1/2 -right-16 rotate-90 origin-right bg-emerald-600 text-white px-6 py-3 rounded-t-xl shadow-lg hover:bg-emerald-700 transition-all">
+    Book a Visit
+  </a>
+
+ 
+
+ 
+
+  <!-- PERSON-CENTRED CARE -------------------------------------------------->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">Person-Centred Care</h2>
+        <p class="mb-6">
+          Every resident is unique. Our care plans are tailored and regularly reviewed in partnership with families, GPs, and multidisciplinary teams.
+        </p>
+
+       <ul class="space-y-4">
+  Of course! Here is the code with the icons replaced as requested. I've also preserved the original CSS classes to ensure the new SVG icons maintain the same size and spacing.
+<br>
+<li class="flex items-start">
+  <!-- ICON 1 -->
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-emerald-600 w-6 h-6 flex-shrink-0">
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <path d="M7 4.82936C7 6.37714 8.72593 8.00761 10.1497 9.08932C10.9489 9.69644 11.3484 10 12 10C12.6516 10 13.0512 9.69644 13.8503 9.08933C15.2741 8.00763 17 6.37717 17 4.82935C17 2.03918 14.2499 0.997463 12 3.15285C9.75008 0.997463 7 2.03918 7 4.82936Z" fill="#364739"></path>
+      <path d="M6.25993 21.3884H6C5.05719 21.3884 4.58579 21.3884 4.29289 21.0955C4 20.8026 4 20.3312 4 19.3884V18.2764C4 17.7579 4 17.4987 4.13318 17.2672C4.26636 17.0356 4.46727 16.9188 4.8691 16.6851C7.51457 15.1464 11.2715 14.2803 13.7791 15.7759C13.9475 15.8764 14.0991 15.9977 14.2285 16.1431C14.7866 16.77 14.746 17.7161 14.1028 18.2775C13.9669 18.396 13.8222 18.486 13.6764 18.5172C13.7962 18.5033 13.911 18.4874 14.0206 18.4699C14.932 18.3245 15.697 17.8375 16.3974 17.3084L18.2046 15.9433C18.8417 15.462 19.7873 15.4619 20.4245 15.943C20.9982 16.3762 21.1736 17.0894 20.8109 17.6707C20.388 18.3487 19.7921 19.216 19.2199 19.7459C18.6469 20.2766 17.7939 20.7504 17.0975 21.0865C16.326 21.4589 15.4738 21.6734 14.6069 21.8138C12.8488 22.0983 11.0166 22.0549 9.27633 21.6964C8.29253 21.4937 7.27079 21.3884 6.25993 21.3884Z" fill="#364739"></path>
+    </g>
+  </svg>
+  <p class="ml-3">Dedicated key worker for personalised support</p>
+</li>
+
+<li class="flex items-start">
+  <!-- ICON 2 -->
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-emerald-600 w-6 h-6 flex-shrink-0">
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <path d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V2.25143C12.8612 2.25311 12.9561 2.25675 13.0446 2.26458C14.8548 2.42465 16.2896 3.85953 16.4497 5.66968C16.4643 5.83512 16.4643 6.02256 16.4643 6.29785L16.4643 7.521C16.4643 11.3903 13.5202 14.5719 9.75001 14.9481V17.0001C9.75001 19.3473 11.6528 21.2501 14 21.2501H14.8824C16.2803 21.2501 17.4809 20.3981 17.9902 19.1822C18.03 19.0872 18.0578 18.9789 18.075 18.8547C16.8708 18.4647 16 17.3341 16 16C16 14.3431 17.3432 13 19 13C20.6569 13 22 14.3431 22 16C22 17.4603 20.9567 18.6768 19.5748 18.945C19.5472 19.2085 19.4887 19.4872 19.3738 19.7617C18.6391 21.5156 16.9058 22.7501 14.8824 22.7501H14C10.8244 22.7501 8.25001 20.1757 8.25001 17.0001V14.9495C4.3217 14.5722 1.25001 11.2625 1.25001 7.23529L1.25 6.29791C1.24997 6.02259 1.24995 5.83514 1.26458 5.66968C1.42465 3.85953 2.85954 2.42465 4.66969 2.26458C4.82536 2.25081 5.00051 2.25002 5.25001 2.24999V2C5.25001 1.58579 5.58579 1.25 6.00001 1.25C6.41422 1.25 6.75001 1.58579 6.75001 2V4C6.75001 4.41421 6.41422 4.75 6.00001 4.75C5.58579 4.75 5.25001 4.41421 5.25001 4V3.75002C4.9866 3.7502 4.88393 3.75148 4.80181 3.75875C3.71573 3.85479 2.85479 4.71572 2.75875 5.80181C2.75074 5.8924 2.75001 6.00802 2.75001 6.3369V7.23529C2.75001 10.6871 5.54823 13.4853 9.00001 13.4853C12.294 13.4853 14.9643 10.815 14.9643 7.521V6.3369C14.9643 6.00802 14.9636 5.8924 14.9555 5.80181C14.8595 4.71572 13.9986 3.85479 12.9125 3.75875C12.8702 3.755 12.8224 3.75285 12.75 3.75162V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25Z" fill="#364739"></path>
+    </g>
+  </svg>
+  <p class="ml-3">Regular on-site GP, physio &amp; podiatry visits</p>
+</li>
+
+<li class="flex items-start">
+  <!-- ICON 3 -->
+  <svg fill="#364739" viewBox="0 0 64 64" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" stroke="#364739" class="text-emerald-600 w-6 h-6 flex-shrink-0">
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <title></title>
+      <path d="M21.46777,38.81689,20.35742,40.48a21.01258,21.01258,0,0,0,3.63037,1.9375l.76367-1.84863A18.9743,18.9743,0,0,1,21.46777,38.81689Z"></path>
+      <path d="M21.40039,7.22852,20.2832,5.56934a21.11682,21.11682,0,0,0-3.17187,2.6206l1.418,1.41016A19.10447,19.10447,0,0,1,21.40039,7.22852Z"></path>
+      <path d="M14.4541,30.3042a18.92075,18.92075,0,0,1-1.08545-3.55957l-1.96094.39209a20.88972,20.88972,0,0,0,1.20069,3.937Z"></path>
+      <path d="M11.39014,18.9502A21.19577,21.19577,0,0,0,11,23v.042L13,23a19.18514,19.18514,0,0,1,.353-3.667Z"></path>
+      <path d="M39.28613,40.55322a18.904,18.904,0,0,1-3.56006,1.08155l.38965,1.96191a20.903,20.903,0,0,0,3.938-1.19678Z"></path>
+      <path d="M14.50781,11.376a20.99944,20.99944,0,0,0-1.93359,3.63232l1.84961.76172a18.93245,18.93245,0,0,1,1.749-3.28564Z"></path>
+      <path d="M32.021,44,32,42a19.13717,19.13717,0,0,1-3.686-.35742l-.38574,1.96289A21.18455,21.18455,0,0,0,32,44Z"></path>
+      <path d="M43.60547,5.49561a20.97783,20.97783,0,0,0-3.63428-1.9292L39.21143,5.416A19.03348,19.03348,0,0,1,42.499,7.16162Z"></path>
+      <path d="M46.85693,37.8418l-1.415-1.41407a19.12968,19.12968,0,0,1-2.87646,2.36573l1.11426,1.66113A21.17775,21.17775,0,0,0,46.85693,37.8418Z"></path>
+      <path d="M36.02832,2.38623A21.15915,21.15915,0,0,0,32,2h-.063L32,4a19.1916,19.1916,0,0,1,3.64648.34912Z"></path>
+      <path d="M28.23486,4.37305l-.39355-1.96094a20.83857,20.83857,0,0,0-3.93555,1.20508l.77149,1.84472A18.88416,18.88416,0,0,1,28.23486,4.37305Z"></path>
+      <path d="M53,23v-.085L51,23a19.18941,19.18941,0,0,1-.36084,3.70557l1.96191.38769A21.18081,21.18081,0,0,0,53,23Z"></path>
+      <path d="M49.418,11.26514a21.14388,21.14388,0,0,0-2.62354-3.169l-1.40918,1.419a19.16967,19.16967,0,0,1,2.37549,2.86914Z"></path>
+      <path d="M18.58643,36.45654A19.14644,19.14644,0,0,1,16.21729,33.582l-1.66016,1.11621a21.17405,21.17405,0,0,0,2.61719,3.17432Z"></path>
+      <path d="M52.584,18.81934a20.92959,20.92959,0,0,0-1.209-3.93409l-1.84473.77344A18.91741,18.91741,0,0,1,50.624,19.21582Z"></path>
+      <path d="M51.4082,31.0332l-1.84765-.76562a19.02964,19.02964,0,0,1-1.75635,3.28271l1.66309,1.11133A21.05388,21.05388,0,0,0,51.4082,31.0332Z"></path>
+      <path d="M31.5,38.18365V17.44171A3.49466,3.49466,0,0,1,25.5,15h1a2.5,2.5,0,0,0,5,0V7.81635A5.574,5.574,0,0,0,28.62067,7a5.89928,5.89928,0,0,0-5.79309,6c0,.03015.004.05927.00439.08929A5.93862,5.93862,0,0,0,18,19a6.09175,6.09175,0,0,0,1.48383,4A6.09175,6.09175,0,0,0,18,27c0,2.88721,1.88818,5.81519,4.74341,5.98383a2.49291,2.49291,0,0,0-.77619-4.8642v-1a3.49021,3.49021,0,0,1,1.1037,6.80456A5.67125,5.67125,0,0,0,28.62067,39,5.574,5.574,0,0,0,31.5,38.18365Z"></path>
+      <path d="M46,27a6.09175,6.09175,0,0,0-1.48383-4A6.09175,6.09175,0,0,0,46,19c0-2.82227-1.80316-5.68658-4.55115-5.97168a2.4958,2.4958,0,0,0,.10193,4.98969v1a3.496,3.496,0,0,1-.621-6.9372A5.67174,5.67174,0,0,0,35.37933,7,5.574,5.574,0,0,0,32.5,7.81635V23.55829A3.49466,3.49466,0,0,1,38.5,26h-1a2.5,2.5,0,0,0-5,0V38.18365A5.574,5.574,0,0,0,35.37933,39a5.89928,5.89928,0,0,0,5.79309-6c0-.03015-.004-.05927-.00439-.08929A5.93862,5.93862,0,0,0,46,27Z"></path>
+      <path d="M59,27h-.19177a3.43306,3.43306,0,0,0-3.13977,3.26605L53.19934,42.97394a2.79331,2.79331,0,0,1,.62506,4.42541L47.423,52.79877l-.64453-.76465,6.37012-5.37061a1.77885,1.77885,0,0,0,.49707-1.24707,1.79746,1.79746,0,0,0-.68371-1.41479,2.11317,2.11317,0,0,0-2.5481-.05072L42.829,49.45105A1.9522,1.9522,0,0,0,42,51.04785V62H52V59.18579l7.02594-4.473A7.46367,7.46367,0,0,0,62,48.49823l-.01685-17.66772C61.98114,28.71423,60.752,27,59,27Z"></path>
+      <path d="M4.97406,54.71283,12,59.18579V62H22V51.04785a1.9522,1.9522,0,0,0-.829-1.5968l-7.58484-5.50012a2.11317,2.11317,0,0,0-2.5481.05072,1.79746,1.79746,0,0,0-.68371,1.41479,1.77885,1.77885,0,0,0,.49707,1.24707l6.37012,5.37061-.64453.76465L10.1756,47.39935a2.77371,2.77371,0,0,1,.62506-4.42541L8.33154,30.26605A3.43306,3.43306,0,0,0,5.19177,27H5c-1.752,0-2.98114,1.71423-2.98315,3.83051L2,48.49823A7.46367,7.46367,0,0,0,4.97406,54.71283Z"></path>
+    </g>
+  </svg>
+  <p class="ml-3">Specialist dementia-friendly environment &amp; training</p>
+</li>
+
+</ul>
+      </div>
+
+      <div data-aos="fade-left">
+        <img src="assets/images/CP1.jpg"
+             alt="Nurse with resident"
+             class="rounded-3xl shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCOMMODATION & ENVIRONMENT ----------------------------------------->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12" data-aos="fade-up">
+      <div class="lg:col-span-2">
+        <img src="assets/images/FAC5.jpg"
+             alt="Bright lounge"
+             class="rounded-3xl shadow-xl">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="text-3xl font-bold mb-4">Spaces that Feel Like Home</h2>
+        <p class="mb-6">
+          Choose from cosy private rooms, quiet reading corners, or lively communal lounges. Each space is designed for comfort, safety and independence.
+        </p>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Private en-suite bedrooms (TV &amp; Wi-Fi included)</li>
+          <li>Two stylish lounges overlooking the gardens</li>
+          <li>Hairdressing salon &amp; therapy suite</li>
+          <li>24-hour call system and secure access</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- DINING --------------------------------------------------------------->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-4">Food &amp; Nutrition</h2>
+        <p class="mb-6">
+          From hearty roast dinners to light afternoon teas, our chefs create delicious, nutritionally-balanced menus – all reviewed by a qualified dietitian.
+        </p>
+        <p class="font-semibold text-emerald-700">Special diets welcome • Flexible mealtimes • Family Sunday lunch</p>
+      </div>
+      <div data-aos="fade-left">
+        <img src="assets/images/FAC6.jpg"
+             alt="Chef plating food"
+             class="rounded-3xl shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES ----------------------------------------------------------->
+  <section class="py-20 bg-gray-50" id="activities">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Daily Life &amp; Activities</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+  <!-- Card -->
+  <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="zoom-in">
+    <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 mb-4">
+      <i class="fa-solid fa-music"></i>
+    </span>
+    <h3 class="font-semibold mb-2">Music &amp; Movement</h3>
+    <p>Sing-along sessions, visiting performers and gentle chair-based exercise classes.</p>
+  </div>
+  <!-- Card -->
+  <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="zoom-in" data-aos-delay="100">
+    <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 mb-4">
+      <i class="fa-solid fa-palette"></i>
+    </span>
+    <h3 class="font-semibold mb-2">Arts &amp; Crafts</h3>
+    <p>Seasonal projects, pottery, knitting clubs and gallery visits for creative expression.</p>
+  </div>
+  <!-- Card -->
+  <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="zoom-in" data-aos-delay="200">
+    <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 mb-4">
+      <i class="fa-solid fa-bus"></i>
+    </span>
+    <h3 class="font-semibold mb-2">Outings &amp; Community</h3>
+    <p>Weekly minibus trips to local markets, seaside walks, and inter-care-home bowling leagues.</p>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- CONNECTIVITY & TECH -------------------------------------------------->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right" class="order-2 lg:order-1">
+        <img src="assets/images/FAC7.jpg"
+             alt="Resident video calling"
+             class="rounded-3xl shadow-xl">
+      </div>
+      <div data-aos="fade-left" class="order-1 lg:order-2">
+        <h2 class="text-3xl font-bold mb-4">Stay Connected</h2>
+        <ul class="space-y-3">
+          <li>Super-fast fibre Wi-Fi throughout the home</li>
+          <li>iPads &amp; tech support for video calls</li>
+          <li>Alexa-enabled music and audio books</li>
+          <li>Secure online portal for family updates</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS ---------------------------------------------------------->
+  <section class="py-20 bg-emerald-700 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+      <svg class="mx-auto w-12 h-12 mb-6 opacity-40" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M7.17 7.002A5.752 5.752 0 0 0 1.5 12.75v3.498A1.753 1.753 0 0 0 3.25 18h3.498A1.753 1.753 0 0 0 8.5 16.248v-3.498A1.753 1.753 0 0 0 6.748 11H5a.25.25 0 0 1-.25-.25V9.75a1.75 1.75 0 0 1 1.75-1.75h.17zM18.67 7.002a5.752 5.752 0 0 0-5.67 5.748v3.498A1.753 1.753 0 0 0 14.75 18h3.498A1.753 1.753 0 0 0 20 16.248v-3.498A1.753 1.753 0 0 0 18.248 11H16.5a.25.25 0 0 1-.25-.25V9.75a1.75 1.75 0 0 1 1.75-1.75h.67z"/>
+      </svg>
+      <p class="text-xl md:text-2xl leading-relaxed">
+        “I do not live nearby, but whenever I visit I always find the staff most friendly, kind and helpful. It is very reassuring to feel that my mum is being well looked after in a caring and well-organised environment.”
+      </p>
+      <p class="mt-4 font-semibold">—  Carolyn L (Daughter of Resident)</p>
+    </div>
+  </section>
+
+  <!-- VIRTUAL TOUR --------------------------------------------------------->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-5xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8">Take a Virtual Tour</h2>
+      <div class="relative w-full h-0 pb-[56.25%] rounded-3xl overflow-hidden shadow-xl">
+        <!-- Replace the YouTube embed link -->
+        <iframe class="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/Scxs7L0vhZ4"
+                title="Virtual tour video"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+ <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    Visit Us at <span class="text-primary">Danesbrook</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Located in the heart of Cardiff, easily accessible by car and public transport with ample parking available.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <!-- Google Map Embed (Left Side) -->
+    <div class="relative">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.1410089413347!2d-3.2360332229939564!3d51.487877871780166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1c6a8b7f62bd%3A0xba3086516746a210!2sCadoc%20Pl%2C%20Cardiff%20CF5%202QN%2C%20UK!5e0!3m2!1sen!2suk!4v1708421954656!5m2!1sen!2suk"
+            class="rounded-2xl h-96 w-full"
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <!-- Overlay button -->
+        <button class="absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-lg font-semibold text-primary shadow-card hover:bg-gray-100 transition">
+            <a href="https://maps.google.com/?q=Cadoc+Pl,+Cardiff+CF5+2QN,+United+Kingdom" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                Open in Maps
+            </a>
+        </button>
+    </div>
+
+    <!-- Location Details (Right Side) -->
+    <div class="space-y-8">
+        <!-- Address -->
+        <div class="card">
+            <div class="flex items-start">
+                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Our Address</h3>
+                    <div class="text-text-primary">
+                        <p>Danesbrook House</p>
+                        <p>Cadoc Pl, Danes Ct</p>
+                        <p>Cardiff</p>
+                        <p class="mt-2 text-text-secondary">United Kingdom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parking Information -->
+        <div class="card">
+            <div class="flex items-start">
+                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2v0a2 2 0 01-2 2H8a2 2 0 01-2-2v-2a2 2 0 01-2-2V9a2 2 0 012-2h2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Parking</h3>
+                    <ul class="space-y-1 text-text-primary">
+                        <li>• Free on-site parking available</li>
+                        <li>• 15 spaces including disabled bays</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Public Transport -->
+        <div class="card">
+            <div class="flex items-start">
+                <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                    </svg>
+                </div>
+                <div>
+    <h3 class="text-xl font-headline font-semibold text-text-primary mb-2">Public Transport</h3>
+    <ul class="space-y-1 text-text-primary">
+        <li>• Bus routes 62, 63, 64 (nearest stops on Danescourt Way, 5-minute walk)</li>
+        <li>• Cardiff Central Station (approx. 15 minutes by bus)</li>
+        <li>• Cardiff Bay Station (approx. 20 minutes by bus)</li>
+        <li>• Taxi rank (approx. 100 metres away)</li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+
+  
+
+</main>
+
+<!-- lucide icons -->
+<script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+
+
+
+    <!-- Call to Action -->
+    <section class="py-16 lg:py-24 bg-gradient-to-r from-primary to-primary-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-headline font-bold text-white mb-6">
+                Ready to Make <span class="text-accent-300">Danesbrook</span> Home?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Schedule a personal tour to experience our beautiful facilities and meet our caring team. We're here to answer all your questions.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_visit.html" class="bg-white text-primary px-8 py-4 rounded-lg font-cta text-lg transition-all duration-300 hover:bg-gray-100 focus:ring-2 focus:ring-white/50 focus:outline-none">
+                    Schedule a Tour
+                </a>
+                <a href="admissions_process.html" class="bg-accent text-white px-8 py-4 rounded-lg font-cta text-lg transition-all duration-300 hover:bg-accent-700 focus:ring-2 focus:ring-accent-200 focus:outline-none">
+                    Start Admissions Process
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                                                <img src="assets/images/CCH_logo.png" alt="capital-care-homes-logo" height="100px" width="100px">
+
+                        <div>
+                            <div class="font-headline font-bold text-lg">Danesbrook House</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Premium residential care home serving Wales with dignity, compassion, and excellence for over 20 years.
+                    </p>
+                    <div class="flex space-x-4">
+    <!-- Facebook -->
+    <a href="https://facebook.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 
+            24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 
+            4.659-4.788 1.325 0 2.463.099 2.793.143v3.24h-1.918c-1.504 
+            0-1.797.716-1.797 1.765v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 
+            24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0"/>
+        </svg>
+    </a>
+
+    <!-- Twitter / X -->
+    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 
+            1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 
+            1.05C18.37 4.5 17.26 4 16 4c-2.35 
+            0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.99-8.84-4.58a4.28 
+            4.28 0 0 0-.58 2.15c0 1.49.75 2.81 
+            1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 
+            2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 
+            1-1.93.07 4.28 4.28 0 0 0 4 
+            2.98c-2 .79-3.49 1.19-5.33 
+            1.84a12.2 12.2 0 0 0 6.93 2.04C16 
+            21 20.33 14.46 20.33 8.79c0-.19 
+            0-.37-.01-.56.84-.6 1.56-1.36 
+            2.14-2.23z"/>
+        </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.76 5.76 0 0 
+            1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 
+            22h-8.5A5.76 5.76 0 0 1 2 
+            16.25v-8.5A5.76 5.76 0 0 1 7.75 
+            2zm0 1.5A4.25 4.25 0 0 0 
+            3.5 7.75v8.5A4.25 4.25 0 0 0 
+            7.75 20.5h8.5A4.25 4.25 0 0 0 
+            20.5 16.25v-8.5A4.25 4.25 0 0 0 
+            16.25 3.5h-8.5zM12 7a5 5 0 1 1 
+            0 10 5 5 0 0 1 0-10zm0 1.5a3.5 
+            3.5 0 1 0 0 7 3.5 3.5 0 0 0 
+            0-7zm5-2a1 1 0 1 1-2 
+            0 1 1 0 0 1 2 0z"/>
+        </svg>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14C2.24 0 0 2.24 0 
+            5v14c0 2.76 2.24 5 5 
+            5h14c2.76 0 5-2.24 
+            5-5V5c0-2.76-2.24-5-5-5zM8.34 
+            19.34H5.67V9h2.67v10.34zM7 
+            7.67c-.85 0-1.55-.7-1.55-1.55 
+            0-.85.7-1.55 1.55-1.55.85 
+            0 1.55.7 1.55 1.55 0 
+            .85-.7 1.55-1.55 1.55zm12.34 
+            11.67h-2.67v-5.34c0-1.27-.02-2.9-1.76-2.9-1.76 
+            0-2.03 1.38-2.03 2.8v5.44H10.2V9h2.56v1.41h.04c.36-.67 
+            1.24-1.37 2.55-1.37 2.73 0 3.23 
+            1.8 3.23 4.14v6.16h-.01z"/>
+        </svg>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.5 6.2a2.94 2.94 0 0 0-2.06-2.08C19.6 
+            3.5 12 3.5 12 3.5s-7.6 0-9.44.62A2.94 
+            2.94 0 0 0 .5 6.2C0 8.04 0 
+            12 0 12s0 3.96.5 5.8a2.94 2.94 0 0 0 
+            2.06 2.08C4.4 20.5 12 20.5 12 
+            20.5s7.6 0 9.44-.62A2.94 2.94 0 0 0 
+            23.5 17.8c.5-1.84.5-5.8.5-5.8s0-3.96-.5-5.8zM9.75 
+            15.5v-7l6 3.5-6 3.5z"/>
+        </svg>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://tiktok.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M16.006 6.124a4.94 4.94 0 0 0 .293 
+            1.672 4.918 4.918 0 0 0 2.032 
+            2.326 4.918 4.918 0 0 0 2.562.7V7.188a8.337 
+            8.337 0 0 1-2.511-.39 8.332 8.332 0 0 
+            1-2.376-1.262zM12.452 0h3.202v17.065c0 1.547-.45 
+            2.78-1.351 3.698-.9.919-2.01 1.382-3.333 
+            1.382-1.322 0-2.433-.463-3.332-1.382-.9-.918-1.35-2.151-1.35-3.698 
+            0-1.546.45-2.778 1.35-3.696.9-.919 2.01-1.382 
+            3.332-1.382.406 0 .793.067 1.158.2V0z"/>
+        </svg>
+    </a>
+
+    <!-- Pinterest -->
+    <a href="https://pinterest.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 
+            5.373 0 12c0 5.084 3.163 9.414 7.643 
+            11.06-.106-.94-.2-2.385.042-3.413.218-.937 
+            1.408-5.957 1.408-5.957s-.36-.72-.36-1.781c0-1.665.968-2.911 
+            2.169-2.911 1.025 0 1.517.77 1.517 
+            1.688 0 1.028-.653 2.567-.993 
+            3.992-.285 1.194.6 2.165 
+            1.776 2.165 2.13 0 3.768-2.245 
+            3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 
+            0-5.409 2.562-5.409 5.2 0 1.009.394 2.091.889 
+            2.741.098.12.112.226.085.345-.091.376-.294 
+            1.199-.336 1.364-.053.225-.172.271-.402.165-1.495-.692-2.432-2.878-2.432-4.647 
+            0-3.777 2.748-7.252 7.92-7.252 4.158 
+            0 7.392 2.967 7.392 6.923 0 4.136-2.607 
+            7.463-6.233 7.463-1.214 0-2.357-.629-2.75-1.378l-.748 
+            2.854c-.271 1.042-1.002 2.349-1.492 3.145C9.57 23.812 
+            10.763 24 12.017 24c6.627 0 12.01-5.373 
+            12.01-12 0-6.627-5.383-12-12.01-12z"/>
+        </svg>
+    </a>
+</div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="our_care.html" class="text-gray-400 hover:text-white transition-colors duration-200">Our Care Approach</a></li>
+                        <li><a href="life_at_danesbrook.html" class="text-gray-400 hover:text-white transition-colors duration-200">Life at Danesbrook</a></li>
+                        <li><a href="facilities.html" class="text-gray-400 hover:text-white transition-colors duration-200">Rooms & Facilities</a></li>
+                        <li><a href="contact_visit.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact & Visit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-headline font-semibold text-lg mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-gray-400">24/7 Nursing Care</span></li>
+                        <li><span class="text-gray-400">Dementia Care</span></li>
+                        <li><span class="text-gray-400">Rehabilitation Services</span></li>
+                        <li><span class="text-gray-400">Activity Programs</span></li>
+                        <li><span class="text-gray-400">Family Support</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+  <h3 class="font-headline font-semibold text-lg mb-4">Contact Us</h3>
+  <div class="space-y-3">
+
+    <!-- Address (Google Maps link) -->
+    <div class="flex items-start">
+      <svg class="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+      </svg>
+      <a href="https://www.google.com/maps?q=Cadoc+Pl,+Danes+Ct,+Cardiff,+United+Kingdom" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="text-gray-400 hover:text-primary transition-colors">
+        Cadoc Pl, Danes Ct <br> Cardiff <br> United Kingdom
+      </a>
+    </div>
+
+    <!-- Phone Number -->
+    <div class="flex items-center">
+      <svg class="h-5 w-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+      </svg>
+      <a href="tel:+442920552245" 
+         class="text-gray-400 hover:text-primary transition-colors">
+        +44 29 2055 2245
+      </a>
+    </div>
+
+    <!-- Email -->
+    <div class="flex items-center">
+      <svg class="h-5 w-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+      </svg>
+      <a href="mailto:admin@danesbrook.com" 
+         class="text-gray-400 hover:text-primary transition-colors">
+        admin@danesbrook.com
+      </a>
+    </div>
+
+  </div>
+</div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Danesbrook House. All Rights Reserved. | 
+                    <a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Privacy Policy</a> | 
+                    <a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Pricing calculator
+        function updatePricing() {
+            const roomType = parseInt(document.getElementById('room-type').value);
+            const careLevel = parseInt(document.getElementById('care-level').value);
+            const additionalServices = Array.from(document.querySelectorAll('.additional-service:checked'))
+                .reduce((sum, checkbox) => sum + parseInt(checkbox.value), 0);
+            
+            const totalWeekly = roomType + careLevel + additionalServices;
+            const totalMonthly = Math.round(totalWeekly * 4.33);
+            const totalAnnual = totalWeekly * 52;
+            
+            document.getElementById('total-cost').textContent = `£${totalWeekly}`;
+            document.getElementById('monthly-cost').textContent = `£${totalMonthly.toLocaleString()}`;
+            document.getElementById('annual-cost').textContent = `£${totalAnnual.toLocaleString()}`;
+        }
+
+        // Add event listeners for pricing calculator
+        document.getElementById('room-type').addEventListener('change', updatePricing);
+        document.getElementById('care-level').addEventListener('change', updatePricing);
+        document.querySelectorAll('.additional-service').forEach(checkbox => {
+            checkbox.addEventListener('change', updatePricing);
+        });
+
+        // Interactive floor plan
+        const roomInfo = {
+            standard: {
+                title: 'Standard Room',
+                description: 'Comfortable and well-appointed rooms with private en-suite bathroom, 24/7 emergency call system, and beautiful garden views.'
+            },
+            premium: {
+                title: 'Premium Room',
+                description: 'Spacious rooms with enhanced amenities including larger living space, premium en-suite with walk-in shower, and private balcony.'
+            },
+            companion: {
+                title: 'Companion Suite',
+                description: 'Two-bedroom configuration perfect for couples, featuring shared living area, two en-suite bathrooms, and full kitchen facilities.'
+            },
+            dining: {
+                title: 'Dining Room',
+                description: 'Restaurant-style dining room serving freshly prepared meals using local Welsh ingredients with multiple seating options.'
+            },
+            lounge: {
+                title: 'Community Lounge',
+                description: 'Comfortable social spaces for relaxation, conversation, and informal gatherings with residents and families.'
+            },
+            library: {
+                title: 'Library & Reading Room',
+                description: 'Quiet spaces with extensive book collection, comfortable reading nooks, and peaceful atmosphere for contemplation.'
+            },
+            medical: {
+                title: 'Medical Clinic',
+                description: 'On-site medical facilities with visiting GPs, health monitoring equipment, and medication management services.'
+            },
+            therapy: {
+                title: 'Therapy Center',
+                description: 'Comprehensive wellness center with physiotherapy, occupational therapy, and fitness facilities with adaptive equipment.'
+            },
+            arts: {
+                title: 'Arts & Crafts Studio',
+                description: 'Creative spaces for painting, pottery, and various craft activities with professional instruction available.'
+            },
+            music: {
+                title: 'Music Room',
+                description: 'Piano and instruments available for personal practice, group sessions, and music therapy programs.'
+            },
+            garden: {
+                title: 'Therapeutic Gardens',
+                description: 'Beautiful landscaped gardens with accessible paths, seating areas, and opportunities for garden therapy activities.'
+            }
+        };
+
+        document.querySelectorAll('.room-hover').forEach(room => {
+            room.addEventListener('mouseenter', function() {
+                const roomType = this.getAttribute('data-room');
+                const info = roomInfo[roomType];
+                if (info) {
+                    document.getElementById('room-title').textContent = info.title;
+                    document.getElementById('room-description').textContent = info.description;
+                    document.getElementById('room-info').classList.remove('hidden');
+                }
+            });
+
+            room.addEventListener('mouseleave', function() {
+                document.getElementById('room-info').classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+        });
+
+        // Initialize pricing calculator
+        updatePricing();
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
