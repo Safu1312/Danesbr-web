@@ -296,6 +296,8 @@
             <i class="fas fa-chevron-right"></i>
         </div>
     </div>
+
+    
 </section>
 
 <style>
@@ -1276,18 +1278,202 @@
   </section>
 
   <!-- VIRTUAL TOUR --------------------------------------------------------->
-  <section class="py-20 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-6 text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-bold mb-8">Take a Virtual Tour</h2>
-      <div class="relative w-full h-0 pb-[56.25%] rounded-3xl overflow-hidden shadow-xl">
-        <!-- Replace the YouTube embed link -->
-        <iframe class="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/Scxs7L0vhZ4"
-                title="Virtual tour video"
-                allowfullscreen></iframe>
+    <section class="virtual-tour-section">
+      <div class="virtual-tour-container">
+          <h2 class="virtual-tour-title">Virtual Tour of Danesbrook House</h2>
+          <div class="virtual-tour-frame">
+
+              <!-- Main Content -->
+              <div class="virtual-tour-content">
+                  <!-- Animated Icon -->
+                  <div class="tour-icon-container">
+                      <div class="tour-icon-wrapper">
+                          <div class="tour-ring tour-ring-1"></div>
+                          <div class="tour-ring tour-ring-2"></div>
+                          <svg class="tour-camera-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 
+                                    002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                          </svg>
+                      </div>
+                  </div>
+
+                  <!-- Text Content -->
+                  <div class="tour-badge">Coming Soon</div>
+                  <h3 class="tour-heading">Virtual Tour will be available soon</h3>
+                  <p class="tour-subheading" style="text-align: center;">
+                      Soon, you’ll be able to explore Danesbrook House from the comfort of your home. 
+                      Take a look around our beautifully furnished rooms, gardens, and relaxing communal spaces 
+                      designed to make residents feel safe, cared for, and truly at home.
+                  </p>
+
+                  <!-- CTA Button -->
+                  <a href="contact.html" class="tour-cta-button">
+                      <span>Contact Us to Learn More</span>
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                      </svg>
+                  </a>
+              </div>
+          </div>
       </div>
-    </div>
   </section>
+
+    <style>
+    
+  /* Section */
+      .virtual-tour-section {
+          padding: 3rem 0;
+          background: #ffffff;
+      }
+
+      .virtual-tour-container {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 0 1.5rem;
+          text-align: center;
+      }
+
+      .virtual-tour-title {
+          font-size: 1.9rem;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+          color: #34483B;
+      }
+
+      .virtual-tour-frame {
+          position: relative;
+          width: 100%;
+          padding-bottom: 50%;
+          border-radius: 1rem;
+          overflow: hidden;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+          background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f5 100%);
+      }
+
+      .virtual-tour-content {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 2rem;
+      }
+
+      /* Icon */
+      .tour-icon-container {
+          position: relative;
+          margin-bottom: 1rem;
+          z-index: 10;
+      }
+
+      .tour-camera-icon {
+          width: 80px;
+          height: 80px;
+          color: #364839;
+          filter: drop-shadow(0 6px 15px rgba(199, 143, 61, 0.25));
+          animation: tour-pulse-icon 3s ease-in-out infinite;
+      }
+
+      @keyframes tour-pulse-icon {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.08); }
+      }
+
+      /* Decorative rings */
+      .tour-ring {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          border-radius: 50%;
+          border: 2px solid #C78F3D;
+          opacity: 0.2;
+      }
+
+      .tour-ring-1 {
+          width: 110px;
+          height: 110px;
+          margin-left: -55px;
+          margin-top: -55px;
+          animation: rotate-clockwise 12s linear infinite;
+      }
+
+      .tour-ring-2 {
+          width: 140px;
+          height: 140px;
+          margin-left: -70px;
+          margin-top: -70px;
+          animation: rotate-counter 15s linear infinite;
+      }
+
+      @keyframes rotate-clockwise {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+      }
+
+      @keyframes rotate-counter {
+          from { transform: rotate(360deg); }
+          to { transform: rotate(0deg); }
+      }
+
+      /* Text */
+      .tour-badge {
+          display: inline-block;
+          background: #364839;
+          color: #fff;
+          padding: 0.4rem 1.2rem;
+          border-radius: 2rem;
+          font-size: 0.85rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+      }
+
+      .tour-heading {
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: #34483B;
+          margin-bottom: 0.75rem;
+      }
+
+      .tour-subheading {
+          font-size: 1rem;
+          color: #555;
+          margin-bottom: 1.5rem;
+          max-width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      /* CTA Button */
+      .tour-cta-button {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.6rem 1.6rem;
+          background: #364839;
+          color: #fff;
+          border: none;
+          border-radius: 2rem;
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          text-decoration: none;
+      }
+
+      .tour-cta-button:hover {
+          background: #364839;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 18px rgba(199, 143, 61, 0.4);
+      }
+
+      .tour-cta-button svg {
+          width: 18px;
+          height: 18px;
+      }
+  </style>
 
  <section class="py-16 lg:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1576,7 +1762,6 @@
                 <div>
                     <h3 class="font-headline font-semibold text-lg mb-4">Our Services</h3>
                     <ul class="space-y-2">
-                        <li><span class="text-gray-400">24/7 Nursing Care</span></li>
                         <li><span class="text-gray-400">Dementia Care</span></li>
                         <li><span class="text-gray-400">Rehabilitation Services</span></li>
                         <li><span class="text-gray-400">Activity Programs</span></li>

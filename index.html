@@ -11,6 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 <script src="javascript/javascript.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
 
 </head>
 <body class="font-body bg-background">
@@ -70,23 +72,23 @@
     <div id="hero-carousel" class="absolute inset-0">
       <!-- Slides -->
       <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
-        <img src="assets/images/Collageweb.jpg" 
+        <img src="assets/images/H1.jpg" 
              alt="Collage Pics of Residents" class="w-full h-full object-cover scale-110 animate-kenburns"/>
       </div>
       <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
-        <img src="assets/images/Hero2.jpg" 
+        <img src="assets/images/H2.jpg" 
              alt="" class="w-full h-full object-cover scale-110 animate-kenburns"/>
       </div>
       <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
-        <img src="assets/images/Hero6.jpg" 
+        <img src="assets/images/H3.jpg" 
              alt="" class="w-full h-full object-cover scale-110 animate-kenburns"/>
       </div>
       <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
-        <img src="assets/images/Hero7.jpg" 
+        <img src="assets/images/H4.jpg" 
              alt="" class="w-full h-full object-cover scale-110 animate-kenburns"/>
       </div>
       <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
-        <img src="assets/images/Hero8.jpg" 
+        <img src="assets/images/H5.jpg" 
              alt="" class="w-full h-full object-cover scale-110 animate-kenburns"/>
       </div>
     </div>
@@ -167,13 +169,24 @@
 
         <!-- CTA Buttons (same for all slides) -->
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="contact_visit.html" 
-             class="btn-primary text-lg px-8 py-4 button-fade">Schedule a Visit</a>
-          <button class="bg-white/20 backdrop-blur-sm text-white px-8 py-4 
-                         rounded-lg font-semibold text-lg transition-all 
-                         duration-300 hover:bg-white/30 focus:ring-2 
-                         focus:ring-white/50 focus:outline-none button-fade delay-1">Virtual Tour</button>
-        </div>
+  <!-- Schedule a Visit Button -->
+  <a href="contact_visit.html" 
+     class="btn-primary text-lg px-8 py-4 button-fade flex items-center justify-center gap-2">
+     <i class="fas fa-calendar-check"></i>
+     Schedule a Visit
+  </a>
+
+  <!-- Virtual Tour Button -->
+  <button class="bg-white/20 backdrop-blur-sm text-white px-8 py-4 
+                 rounded-lg font-semibold text-lg transition-all 
+                 duration-300 hover:bg-white/30 focus:ring-2 
+                 focus:ring-white/50 focus:outline-none button-fade delay-1 flex items-center justify-center gap-2"
+          onclick="event.preventDefault(); document.getElementById('virtualTourModal').classList.add('active'); document.body.style.overflow = 'hidden'; return false;">
+     <i class="fas fa-video-camera "></i>
+     Virtual Tour
+  </button>
+</div>
+
       </div>
     </div>
 
@@ -376,6 +389,11 @@
 .button-fade.delay-1 {
   animation-delay: 1.2s;
 }
+
+.slide-content {
+  min-height: 250px;
+}
+
 </style>
 
 <script>
@@ -447,21 +465,37 @@ showSlide(0);
                     </svg>
                     <span class="font-semibold text-primary">Call Us Today</span>
                 </a>
-                <a href="admissions_process.html" class="flex items-center justify-center p-4 bg-secondary-50 rounded-lg hover:bg-secondary-100 transition-colors duration-200 group">
+                <button id="brochureBtn" class="flex items-center justify-center p-4 bg-secondary-50 rounded-lg hover:bg-secondary-100 transition-colors duration-200 group">
                     <svg class="h-6 w-6 text-secondary mr-3 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                     </svg>
                     <span class="font-semibold text-secondary">Download Brochure</span>
-                </a>
-                <a href="facilities.html" class="flex items-center justify-center p-4 bg-accent-50 rounded-lg hover:bg-accent-100 transition-colors duration-200 group">
-                    <svg class="h-6 w-6 text-accent mr-3 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                    </svg>
-                    <span class="font-semibold text-accent">Virtual Tour</span>
-                </a>
+                </button>
+                 <!-- Virtual Tour Button -->
+    <a href="#" class="tour-button" onclick="event.preventDefault(); document.getElementById('virtualTourModal').classList.add('active'); document.body.style.overflow = 'hidden'; return false;">
+        <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+        </svg>
+        <span style="font-weight: 600; color: #4F46E5;">Virtual Tour</span>
+    </a>
             </div>
         </div>
     </section>
+
+    <script>
+  document.getElementById('brochureBtn').addEventListener('click', () => {
+    // 1. Open PDF in new tab for viewing
+    window.open('assets/images/brochure.pdf', '_blank');
+    
+    // 2. Trigger immediate download
+    const link = document.createElement('a');
+    link.href = 'assets/images/brochure.pdf';
+    link.download = 'brochure.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
 
     <!-- Welcome Section -->
     <section class="py-16 lg:py-24 bg-surface">
@@ -1176,5 +1210,358 @@ showSlide(0);
         });
     </script>
 <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+
+<!-- Modal -->
+    <div class="modal-overlay" id="virtualTourModal" onclick="if(event.target.id === 'virtualTourModal') { this.classList.remove('active'); document.body.style.overflow = ''; }">
+        <div class="modal-content" onclick="event.stopPropagation();">
+            <span class="coming-soon-badge">COMING SOON</span>
+            
+            <div class="icon-container">
+                <div class="rotating-circle">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-dot"></div>
+                </div>
+                <svg class="camera-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                </svg>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+            </div>
+
+            <h3>Virtual Tour Coming Soon!</h3>
+            <p>
+                Sorry, the virtual tour is not available at the moment. Please visit our 
+                <a href="contact.html">Contact page</a> for more information.
+            </p>
+
+            <div class="button-group">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <button class="btn btn-secondary" onclick="document.getElementById('virtualTourModal').classList.remove('active'); document.body.style.overflow = '';">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Close with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' || e.key === 'Esc') {
+                var modal = document.getElementById('virtualTourModal');
+                if (modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+    </script>
+
+
+    
+   
+<style>
+          /* Button Styles */
+        .tour-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 1.5rem;
+            background-color: #EEF2FF;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .tour-button:hover {
+            background-color: #E0E7FF;
+        }
+
+        .tour-button svg {
+            margin-right: 0.75rem;
+            transition: transform 0.2s;
+        }
+
+        .tour-button:hover svg {
+            transform: scale(1.1);
+        }
+
+        /* Modal Overlay */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 1.5rem;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.4s ease-out;
+        }
+
+        /* Coming Soon Badge */
+        .coming-soon-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #C5923F 0%, #34483B 100%);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-weight: bold;
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            animation: bounce 2s infinite;
+        }
+
+        /* Animated Icon Container */
+        .icon-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .camera-icon {
+            width: 80px;
+            height: 80px;
+            color: #384639;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Rotating Circle */
+        .rotating-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            border: 3px dashed #46e58e;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: rotate 8s linear infinite;
+        }
+
+        /* Pulsing Dots */
+        .pulse-dot {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #C5923F;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .pulse-dot:nth-child(1) {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .pulse-dot:nth-child(2) {
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation-delay: 0.5s;
+        }
+
+        .pulse-dot:nth-child(3) {
+            left: -6px;
+            top: 50%;
+            transform: translateY(-50%);
+            animation-delay: 1s;
+        }
+
+        .pulse-dot:nth-child(4) {
+            right: -6px;
+            top: 50%;
+            transform: translateY(-50%);
+            animation-delay: 1.5s;
+        }
+
+        /* Text Styles */
+        h3 {
+            font-size: 1.875rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        p a {
+            color: #384639;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f3f4f6;
+            color: #374151;
+        }
+
+        .btn-secondary:hover {
+            background: #e5e7eb;
+            transform: translateY(-2px);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0.3;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Sparkle Effect */
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #fbbf24;
+            border-radius: 50%;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+
+        .sparkle:nth-child(1) { top: 20%; left: 20%; animation-delay: 0s; }
+        .sparkle:nth-child(2) { top: 20%; right: 20%; animation-delay: 0.5s; }
+        .sparkle:nth-child(3) { bottom: 20%; left: 20%; animation-delay: 1s; }
+        .sparkle:nth-child(4) { bottom: 20%; right: 20%; animation-delay: 1.5s; }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+</style>
+
+ <script>
+        function openModal() {
+            document.getElementById('virtualTourModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('virtualTourModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function closeModalOnOverlay(event) {
+            if (event.target.id === 'virtualTourModal') {
+                closeModal();
+            }
+        }
+
+        // Close with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+
 </body>
 </html>

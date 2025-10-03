@@ -1,87 +1,2090 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Danesbrook House</title>
+    <meta name="description" content="Explore our beautiful rooms and world-class facilities at Danesbrook House. Virtual tours, pricing transparency, and comprehensive amenity details for your peace of mind." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+             <script src="https://cdn.tailwindcss.com"></script>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  <!-- AOS (Animate On Scroll) for subtle fades / slide-ups -->
+  <link  href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => AOS.init({ once:true, duration:700}));</script>
+
+  <!-- Heroicons CDN (solid) -->
+  <script src="https://unpkg.com/heroicons@2.0.18/dist/heroicons.min.js"></script>
+
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="YOUR_NONCE"></script>
+
+ <!-- Add this script in the HEAD section -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml: true,
+          version: 'v19.0'
+        });
+      };
+      
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</head>
+
+<body class="font-body bg-background">
+    
+        <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/CCH_logo.png" alt="Danesbrook-logo" style="height: 125px; width: 150px; padding-top: 10px; " />
+                        <div class="ml-3">
+                            <h1 class="text-xl font-headline font-bold text-primary" style="margin-left: -20px; font-size:x-large;" >Danesbrook House</h1>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="our_care.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Our Care</a>
+                    <a href="life_at_danesbrook.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Life Here</a>
+                    <a href="facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
+                    <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
+                    <a href="gallery.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Gallery</a>
+                    <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
+                    <button class="btn-primary">Book a Tour</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="text-text-primary hover:text-primary p-2">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="our_care.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Our Care</a>
+                    <a href="life_at_danesbrook.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Life Here</a>
+                    <a href="facilities.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Facilities</a>
+                    <a href="admissions_process.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Admission</a>
+                    <a href="gallery.html" class="text-primary font-semibold">Gallery</a>
+                    <a href="contact_visit.html" class="text-text-primary hover:text-primary transition-micro font-semibold">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+    <!-- Background Image with Ken Burns Effect -->
+    <div class="hero-background">
+        <img src="assets/images/AD1.jpg" alt="Danesbrook House contact reception" class="animate-kenburns">
+        <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Gradient overlay for readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-primary-900/70 to-primary-800/50"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <div class="content-wrapper">
+            <div class="slide-content active">
+                <h1 class="hero-title">
+                    <span class="fade-in-word delay-1">Get In</span> 
+                    <span class="fade-in-word delay-2 accent">Touch</span> 
+                    <span class="fade-in-word delay-3">With Us</span>
+                </h1>
+                <p class="hero-description fade-in-up">
+                    We're here to answer your questions and provide the information you need. Whether you're seeking care for yourself or a loved one, our friendly team at Danesbrook House is ready to help you every step of the way.
+                </p>
+                
+                <!-- Feature Cards -->
+                <div class="cards-grid">
+                    <div class="feature-card card-animate">
+                        
+                        <i class="fas fa-phone-alt card-icon"></i>
+                        <p class="card-title"><a href="tel:+442920552245">Call Us</a></p>
+                        <p class="card-subtitle">Available 24/7</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-envelope card-icon"></i>
+                        <p class="card-title"><a href="mailto:admin@danesbrook.com">Email</a></p>
+                        <p class="card-subtitle">Quick response</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-map-marker-alt card-icon"></i>
+                        <p class="card-title">Visit</p>
+                        <p class="card-subtitle">Schedule a tour</p>
+                    </div>
+                    <div class="feature-card card-animate">
+                        <i class="fas fa-comments card-icon"></i>
+                        <p class="card-title">Enquire</p>
+                        <p class="card-subtitle">Fill out form</p>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <button class="btn btn-primary button-fade" onclick="scrollToContactForm()">
+                        <a href="mailto:admin@danesbrook.com">
+                        Send Us a Message
+                        </a>
+                    </button>
+                    <button class="btn btn-secondary button-fade delay-1" onclick="callUs()">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+442920552245">
+                        Call Now
+                        </a>
+                    </button>
+                </div>
+
+                <!-- Quick Info -->
+                <div class="quick-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+<a href="tel:+442920552245" 
+         class="text-gray-400 hover:text-primary transition-colors">
+        +44 29 2055 2245
+      </a>                    </div>
+                    
+                    <div class="info-separator">|</div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                         <a href="mailto:admin@danesbrook.com" 
+         class="text-gray-400 hover:text-primary transition-colors">
+        admin@danesbrook.com
+      </a>
+                    </div>
+                    <div class="info-separator">|</div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Open 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+        </div>
+        <span class="scroll-text">Scroll to contact</span>
+    </div>
+</section>
+
+<style>
+    /* Hero Section - Responsive Height */
+    .hero-section {
+        position: relative;
+        height: 85vh;
+        min-height: 500px;
+        max-height: 700px;
+        overflow: hidden;
+    }
+
+    /* Mobile height adjustments */
+    @media (max-width: 768px) {
+        .hero-section {
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #00b09b, #96c93d);
-            color: #fff;
-            text-align: center;
-            overflow: hidden;
+            min-height: 600px;
+            max-height: 900px;
         }
+    }
 
-        .container {
-            animation: fadeIn 2s ease-in-out;
+    @media (max-width: 480px) {
+        .hero-section {
+            height: calc(100vh - 60px); /* Account for mobile browser UI */
+            min-height: 500px;
         }
+    }
 
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
+    /* Background Image Container */
+    .hero-background {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-background img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Hero overlay for better text visibility */
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    }
+
+    /* Ken Burns effect - reduced for mobile */
+    @keyframes kenburns {
+        0%   { transform: scale(1.05) translate(0, 0); }
+        100% { transform: scale(1.1) translate(-1%, -1%); }
+    }
+
+    @media (min-width: 769px) {
+        @keyframes kenburns {
+            0%   { transform: scale(1.1) translate(0, 0); }
+            100% { transform: scale(1.2) translate(-2%, -2%); }
         }
+    }
 
-        p {
-            font-size: 1.5rem;
+    .animate-kenburns {
+        animation: kenburns 20s ease-in-out infinite alternate;
+    }
+
+    /* Content Container - Responsive */
+    .hero-content {
+        position: relative;
+        height: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    @media (min-width: 640px) {
+        .hero-content {
+            padding: 0 1.5rem;
+        }
+    }
+
+    .content-wrapper {
+        width: 100%;
+        max-width: 56rem;
+    }
+
+    /* Slide Content */
+    .slide-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    /* Typography - Mobile Optimized */
+    .hero-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 480px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .hero-title {
+            font-size: 3.75rem;
+        }
+    }
+
+    .hero-title .accent {
+        color: #fbbf24;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        max-width: 45rem;
+    }
+
+    @media (min-width: 480px) {
+        .hero-description {
+            font-size: 1.125rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .hero-description {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    /* Animation Classes */
+    @keyframes fadeInWord {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-in-word {
+        opacity: 0;
+        display: inline-block;
+        animation: fadeInWord 0.8s ease-out forwards;
+    }
+    .fade-in-word.delay-1 { animation-delay: 0.2s; }
+    .fade-in-word.delay-2 { animation-delay: 0.4s; }
+    .fade-in-word.delay-3 { animation-delay: 0.6s; }
+
+    .fade-in-up {
+        opacity: 0;
+        animation: fadeInWord 1s ease-out 0.8s forwards;
+    }
+
+    @keyframes zoomIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* Cards Grid - Mobile Optimized */
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+        .cards-grid {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .cards-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .feature-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.75rem;
+        padding: 1rem;
+        transition: all 300ms ease;
+        opacity: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    @media (min-width: 640px) {
+        .feature-card {
+            padding: 1.5rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .feature-card.card-animate {
+        animation: zoomIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+
+    .feature-card.card-animate:nth-child(1) { animation-delay: 1s; }
+    .feature-card.card-animate:nth-child(2) { animation-delay: 1.15s; }
+    .feature-card.card-animate:nth-child(3) { animation-delay: 1.3s; }
+    .feature-card.card-animate:nth-child(4) { animation-delay: 1.45s; }
+
+    @media (hover: hover) {
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    /* Touch feedback for mobile */
+    @media (hover: none) {
+        .feature-card:active {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(0.98);
+        }
+    }
+
+    .card-icon {
+        color: #ffffff;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: 640px) {
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    .card-title {
+        color: white;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 0.125rem;
+    }
+
+    @media (min-width: 640px) {
+        .card-title {
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    .card-subtitle {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
+        .card-subtitle {
+            font-size: 0.875rem;
+        }
+    }
+
+    /* CTA Buttons - Mobile Optimized */
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+        .cta-buttons {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
             margin-bottom: 2rem;
         }
+    }
 
-        .loader {
-            border: 8px solid rgba(255, 255, 255, 0.3);
-            border-top: 8px solid #fff;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
+    .btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.75rem;
+        border: none;
+        cursor: pointer;
+        transition: all 300ms ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        opacity: 0;
+        width: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    @media (min-width: 640px) {
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            width: auto;
+        }
+    }
+
+    .btn.button-fade {
+        animation: fadeInWord 1s ease-out 1.6s forwards;
+    }
+
+    .btn.button-fade.delay-1 {
+        animation-delay: 1.8s;
+    }
+
+   
+
+    @media (hover: hover) {
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.5);
+            transform: translateY(-2px);
+        }
+    }
+
+    @media (hover: none) {
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+    }
+
+    .btn-secondary {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+    @media (hover: hover) {
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+    }
+
+    /* Quick Info Section */
+    .quick-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.875rem;
+        opacity: 0;
+        animation: fadeInWord 1s ease-out 2s forwards;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 640px) {
+        .quick-info {
+            font-size: 1rem;
+            gap: 1.5rem;
+        }
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .info-item i {
+        color: #fbbf24;
+        font-size: 1rem;
+    }
+
+    .info-separator {
+        display: none;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media (min-width: 480px) {
+        .info-separator {
+            display: block;
+        }
+    }
+
+    /* Scroll Indicator */
+    .scroll-indicator {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        z-index: 20;
+        opacity: 0;
+        animation: fadeInWord 1s ease-out 2.5s forwards;
+    }
+
+    @media (max-width: 768px) {
+        .scroll-indicator {
+            display: none;
+        }
+    }
+
+    .scroll-mouse {
+        width: 30px;
+        height: 50px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        position: relative;
+    }
+
+    .scroll-wheel {
+        width: 3px;
+        height: 10px;
+        background: white;
+        border-radius: 2px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: scrollWheel 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollWheel {
+        0% { opacity: 0; top: 10px; }
+        40% { opacity: 1; }
+        80% { opacity: 0; top: 30px; }
+        100% { opacity: 0; top: 30px; }
+    }
+
+    .scroll-text {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    /* Performance optimizations */
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+
+        .animate-kenburns {
+            animation: none;
+        }
+    }
+
+    /* Prevent horizontal scroll on mobile */
+    @media (max-width: 768px) {
+        .hero-section {
+            overflow-x: hidden;
+        }
+    }
+</style>
+
+<script>
+    // Trigger animations on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Reset animations to ensure they play
+        const animatedElements = document.querySelectorAll('.fade-in-word, .fade-in-up, .card-animate, .button-fade');
+        animatedElements.forEach(el => {
+            el.style.animation = 'none';
+            el.offsetHeight; // Trigger reflow
+            el.style.animation = null;
+        });
+    });
+
+    // Button functions
+    function scrollToContact() {
+        const contactSection = document.querySelector('#contact-section');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    function downloadBrochure() {
+        // Replace with actual brochure download link
+        window.open('/assets/downloads/danesbrook-brochure.pdf', '_blank');
+    }
+
+    // Prevent double-tap zoom on buttons (iOS)
+    document.querySelectorAll('.btn').forEach(element => {
+        element.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            element.click();
+        });
+    });
+
+    // Parallax effect on scroll (desktop only)
+    if (window.innerWidth > 768) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroBackground = document.querySelector('.hero-background img');
+            if (heroBackground && scrolled < window.innerHeight) {
+                heroBackground.style.transform = `scale(${1.1 + scrolled * 0.0001}) translateY(${scrolled * 0.3}px)`;
+            }
+        });
+    }
+</script>
+
+  <!-- Gallery Section -->
+    <section id="gallery-section" class="gallery-section">
+        <div class="gallery-container">
+            <!-- Section Header -->
+            <div class="gallery-header">
+                <div class="section-badge">
+                    <i class="fas fa-images"></i>
+                    <span>Photo Gallery</span>
+                </div>
+                <h2 class="section-title">
+                    Discover Life at <span class="text-accent">Danesbrook House</span>
+                </h2>
+                <p class="section-description">
+                    Explore our comfortable living spaces, beautiful gardens, modern facilities, and vibrant community life. 
+                    Each image tells a story of care, comfort, and companionship.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    All Photos
+                </button>
+                <button class="filter-btn" data-filter="facilities">
+                    <i class="fas fa-home"></i>
+                    Facilities
+                </button>
+                <button class="filter-btn" data-filter="bedrooms">
+                    <i class="fas fa-bed"></i>
+                    Bedrooms
+                </button>
+                <button class="filter-btn" data-filter="gardens">
+                    <i class="fas fa-leaf"></i>
+                    Gardens
+                </button>
+                <button class="filter-btn" data-filter="activities">
+                    <i class="fas fa-users"></i>
+                    Activities
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Facilities Images -->
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Main+Lounge" alt="Danesbrook House main lounge" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Main Lounge</h3>
+                                <p class="gallery-category">Facilities</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Dining+Room" alt="Dining room at Danesbrook House" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Dining Room</h3>
+                                <p class="gallery-category">Facilities</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Recreation+Area" alt="Recreation area" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Recreation Area</h3>
+                                <p class="gallery-category">Facilities</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Library" alt="Library and reading room" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Library</h3>
+                                <p class="gallery-category">Facilities</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bedroom Images -->
+                <div class="gallery-item" data-category="bedrooms">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Ensuite+Bedroom" alt="Spacious bedroom with ensuite" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Ensuite Bedroom</h3>
+                                <p class="gallery-category">Bedrooms</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bedrooms">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Single+Bedroom" alt="Comfortable single bedroom" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Single Room</h3>
+                                <p class="gallery-category">Bedrooms</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bedrooms">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Garden+View+Room" alt="Double bedroom with garden view" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Garden View Room</h3>
+                                <p class="gallery-category">Bedrooms</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bedrooms">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Accessible+Room" alt="Accessible bedroom with modern amenities" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Accessible Room</h3>
+                                <p class="gallery-category">Bedrooms</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Garden Images -->
+                <div class="gallery-item" data-category="gardens">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Main+Garden" alt="Beautiful landscaped gardens" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Main Garden</h3>
+                                <p class="gallery-category">Gardens</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="gardens">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Seating+Area" alt="Peaceful garden seating area" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Seating Area</h3>
+                                <p class="gallery-category">Gardens</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="gardens">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Walking+Paths" alt="Flower beds and walking paths" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Walking Paths</h3>
+                                <p class="gallery-category">Gardens</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="gardens">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Patio+Area" alt="Outdoor patio area" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Patio Area</h3>
+                                <p class="gallery-category">Gardens</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activities Images -->
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Group+Activities" alt="Residents enjoying group activities" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Group Activities</h3>
+                                <p class="gallery-category">Activities</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Arts+Crafts" alt="Arts and crafts session" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Arts & Crafts</h3>
+                                <p class="gallery-category">Activities</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Music+Therapy" alt="Music therapy session" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Music Therapy</h3>
+                                <p class="gallery-category">Activities</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-item-inner">
+                        <img src="https://placehold.co/600x400/png?text=Wellness+Program" alt="Exercise and wellness program" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Wellness Program</h3>
+                                <p class="gallery-category">Activities</p>
+                            </div>
+                            <button class="gallery-expand" aria-label="View full image">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="gallery-actions">
+                <button class="btn-load-more" id="loadMoreBtn">
+                    <i class="fas fa-images"></i>
+                    Load More Photos
+                </button>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-category"></p>
+            </div>
+        </div>
+        <div class="lightbox-counter">
+            <span id="lightbox-current">1</span> / <span id="lightbox-total">16</span>
+        </div>
+    </div>
+
+        <style>
+        /* Gallery Section */
+        .gallery-section {
+            padding: 4rem 1rem;
+            background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+        }
+
+        @media (min-width: 768px) {
+            .gallery-section {
+                padding: 6rem 2rem;
+            }
+        }
+
+        .gallery-container {
+            max-width: 1280px;
             margin: 0 auto;
-            animation: spin 1s linear infinite;
         }
 
-        /* Animations */
-        @keyframes spin {
-            0% { transform: rotate(0deg);}
-            100% { transform: rotate(360deg);}
+        .text-accent {
+            color: #fbbf24;
+}
+
+        /* Section Header */
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(-20px);}
-            100% { opacity: 1; transform: translateY(0);}
+        @media (min-width: 768px) {
+            .gallery-header {
+                margin-bottom: 4rem;
+            }
         }
 
-        /* Responsive */
-        @media(max-width: 600px){
-            h1 {
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #34483B;
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 768px) {
+            .section-title {
                 font-size: 2.5rem;
             }
-            p {
-                font-size: 1.2rem;
+        }
+
+        @media (min-width: 1024px) {
+            .section-title {
+                font-size: 3rem;
+            }
+        }
+
+       
+
+        .section-description {
+            font-size: 1rem;
+            color: #6b7280;
+            max-width: 48rem;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        @media (min-width: 768px) {
+            .section-description {
+                font-size: 1.125rem;
+            }
+        }
+
+        /* Filter Buttons */
+        .gallery-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+            padding: 0 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-filters {
+                gap: 1rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        .filter-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 2rem;
+            color: #6b7280;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 300ms ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        @media (min-width: 768px) {
+            .filter-btn {
+                padding: 0.875rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+
+        .filter-btn i {
+            font-size: 1rem;
+        }
+
+        @media (hover: hover) {
+            .filter-btn:hover {
+                border-color: #fbbf24;
+                color: #f59e0b;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+            }
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            border-color: #f59e0b;
+            color: white;
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.25rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.5rem;
+            }
+        }
+
+        /* Gallery Item */
+        .gallery-item {
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stagger animation for items */
+        .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+        .gallery-item:nth-child(2) { animation-delay: 0.15s; }
+        .gallery-item:nth-child(3) { animation-delay: 0.2s; }
+        .gallery-item:nth-child(4) { animation-delay: 0.25s; }
+        .gallery-item:nth-child(5) { animation-delay: 0.3s; }
+        .gallery-item:nth-child(6) { animation-delay: 0.35s; }
+        .gallery-item:nth-child(7) { animation-delay: 0.4s; }
+        .gallery-item:nth-child(8) { animation-delay: 0.45s; }
+
+        .gallery-item.hide {
+            display: none;
+        }
+
+        .gallery-item-inner {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 400ms ease;
+        }
+
+        @media (hover: hover) {
+            .gallery-item-inner:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            }
+
+            .gallery-item-inner:hover .gallery-overlay {
+                opacity: 1;
+            }
+
+            .gallery-item-inner:hover img {
+                transform: scale(1.1);
+            }
+        }
+
+        .gallery-item-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 400ms ease;
+        }
+
+        /* Gallery Overlay */
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+            opacity: 0;
+            transition: opacity 400ms ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+        }
+
+        /* Show overlay on mobile */
+        @media (max-width: 767px) {
+            .gallery-overlay {
+                opacity: 1;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
+            }
+        }
+
+        .gallery-info {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-title {
+                font-size: 1.125rem;
+            }
+        }
+
+        .gallery-category {
+            font-size: 0.875rem;
+            color: #34483B;
+            font-weight: 600;
+        }
+
+        .gallery-expand {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 50%;
+            color: #1f2937;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 300ms ease;
+            opacity: 0;
+        }
+
+        @media (hover: hover) {
+            .gallery-item-inner:hover .gallery-expand {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+
+            .gallery-expand:hover {
+                background: #fbbf24;
+                color: white;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .gallery-expand {
+                opacity: 1;
+                background: rgba(251, 191, 36, 0.9);
+                color: white;
+            }
+        }
+
+        /* Gallery Actions */
+        .gallery-actions {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .btn-load-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.75rem;
+            color: #1f2937;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 300ms ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        @media (hover: hover) {
+            .btn-load-more:hover {
+                border-color: #fbbf24;
+                background: #fbbf24;
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(251, 191, 36, 0.3);
+            }
+        }
+
+        /* Virtual Tour CTA */
+        .virtual-tour-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
+        }
+
+        @media (min-width: 768px) {
+            .virtual-tour-cta {
+                padding: 3rem;
+            }
+        }
+
+        .cta-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .cta-content {
+                flex-direction: row;
+                text-align: left;
+                gap: 2rem;
+            }
+        }
+
+        .cta-icon {
+            width: 4rem;
+            height: 4rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .cta-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .cta-text {
+            flex: 1;
+            color: white;
+        }
+
+        .cta-text h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .cta-text h3 {
+                font-size: 1.75rem;
+            }
+        }
+
+        .cta-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .btn-virtual-tour {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: white;
+            border: none;
+            border-radius: 0.75rem;
+            color: #364839;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 300ms ease;
+            flex-shrink: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        @media (hover: hover) {
+            .btn-virtual-tour:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            opacity: 0;
+            transition: opacity 300ms ease;
+        }
+
+        .lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 70vh;
+            object-fit: contain;
+            border-radius: 0.5rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (min-width: 768px) {
+            .lightbox-content img {
+                max-height: 75vh;
+            }
+        }
+
+        .lightbox-caption {
+            color: white;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .lightbox-caption h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .lightbox-caption h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .lightbox-caption p {
+            font-size: 1rem;
+            color: #fbbf24;
+        }
+
+        /* Lightbox Controls */
+        .lightbox-close,
+        .lightbox-prev,
+        .lightbox-next {
+            position: fixed;
+            width: 3rem;
+            height: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 300ms ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        @media (min-width: 768px) {
+            .lightbox-close,
+            .lightbox-prev,
+            .lightbox-next {
+                width: 3.5rem;
+                height: 3.5rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (hover: hover) {
+            .lightbox-close:hover,
+            .lightbox-prev:hover,
+            .lightbox-next:hover {
+                background: rgba(255, 255, 255, 0.2);
+                transform: scale(1.1);
+            }
+        }
+
+        .lightbox-close {
+            top: 1rem;
+            right: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .lightbox-close {
+                top: 2rem;
+                right: 2rem;
+            }
+        }
+
+        .lightbox-prev {
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @media (min-width: 768px) {
+            .lightbox-prev {
+                left: 2rem;
+            }
+        }
+
+        .lightbox-next {
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @media (min-width: 768px) {
+            .lightbox-next {
+                right: 2rem;
+            }
+        }
+
+        .lightbox-counter {
+            position: fixed;
+            top: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 2rem;
+            padding: 0.5rem 1.25rem;
+            color: white;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        @media (min-width: 768px) {
+            .lightbox-counter {
+                top: 2rem;
+                font-size: 1rem;
+                padding: 0.75rem 1.5rem;
+            }
+        }
+
+        /* Performance Optimizations */
+        @media (prefers-reduced-motion: reduce) {
+            .gallery-item,
+            .gallery-item-inner,
+            .gallery-overlay,
+            .filter-btn,
+            .lightbox {
+                animation: none !important;
+                transition: none !important;
             }
         }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🚧 Page Under Construction 🚧</h1>
-        <p>We are working hard to bring something amazing! Stay tuned.</p>
-        <div class="loader"></div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gallery Filter Functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            let currentFilter = 'all';
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    currentFilter = filter;
+
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter items
+                    galleryItems.forEach((item, index) => {
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category === filter) {
+                            item.classList.remove('hide');
+                            item.style.animation = 'none';
+                            setTimeout(() => {
+                                item.style.animation = `fadeInUp 0.6s ease-out ${index * 0.05}s forwards`;
+                            }, 10);
+                        } else {
+                            item.classList.add('hide');
+                        }
+                    });
+                });
+            });
+
+            // Lightbox Functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxCategory = document.getElementById('lightbox-category');
+            const lightboxCurrent = document.getElementById('lightbox-current');
+            const lightboxTotal = document.getElementById('lightbox-total');
+            let currentImageIndex = 0;
+            let visibleImages = [];
+
+            function updateVisibleImages() {
+                visibleImages = Array.from(galleryItems).filter(item => !item.classList.contains('hide'));
+                lightboxTotal.textContent = visibleImages.length;
+            }
+
+            function openLightbox(index) {
+                updateVisibleImages();
+                currentImageIndex = index;
+                showImage(currentImageIndex);
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            function showImage(index) {
+                if (index < 0 || index >= visibleImages.length) return;
+                
+                const item = visibleImages[index];
+                const img = item.querySelector('img');
+                const title = item.querySelector('.gallery-title').textContent;
+                const category = item.querySelector('.gallery-category').textContent;
+
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxTitle.textContent = title;
+                lightboxCategory.textContent = category;
+                lightboxCurrent.textContent = index + 1;
+            }
+
+            function nextImage() {
+                currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
+                showImage(currentImageIndex);
+            }
+
+            function prevImage() {
+                currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
+                showImage(currentImageIndex);
+            }
+
+            // Add click events to gallery items
+            galleryItems.forEach((item, index) => {
+                const expandBtn = item.querySelector('.gallery-expand');
+                const itemInner = item.querySelector('.gallery-item-inner');
+
+                expandBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const visibleIndex = Array.from(visibleImages).indexOf(item);
+                    openLightbox(visibleIndex);
+                });
+
+                itemInner.addEventListener('click', () => {
+                    const visibleIndex = Array.from(visibleImages).indexOf(item);
+                    openLightbox(visibleIndex);
+                });
+            });
+
+            // Lightbox controls
+            document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+            document.querySelector('.lightbox-next').addEventListener('click', nextImage);
+            document.querySelector('.lightbox-prev').addEventListener('click', prevImage);
+
+            // Close lightbox on background click
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+            });
+
+            // Touch swipe for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            lightbox.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            lightbox.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+
+            function handleSwipe() {
+                if (touchEndX < touchStartX - 50) nextImage();
+                if (touchEndX > touchStartX + 50) prevImage();
+            }
+
+            // Load More Functionality (Optional)
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    // Add your load more logic here
+                    alert('Load more images functionality - integrate with your backend');
+                });
+            }
+
+            // Initialize
+            updateVisibleImages();
+        });
+    </script>
+
+    <!-- Elfsight Facebook Feed | Untitled Facebook Feed -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-7701a841-c55f-4efb-ad63-71658408238d" data-elfsight-app-lazy></div>
+
+
+
+
+
+
+
+       <!-- Footer -->
+    <footer class="bg-text-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                                                <img src="assets/images/CCH_logo.png" alt="capital-care-homes-logo" height="100px" width="100px">
+
+                        <div>
+                            <div class="font-headline font-bold text-lg">Danesbrook House</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Premium residential care home serving Wales with dignity, compassion, and excellence for over 20 years.
+                    </p>
+                    <div class="flex space-x-4">
+    <!-- Facebook -->
+    <a href="https://facebook.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 
+            24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 
+            4.659-4.788 1.325 0 2.463.099 2.793.143v3.24h-1.918c-1.504 
+            0-1.797.716-1.797 1.765v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 
+            24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0"/>
+        </svg>
+    </a>
+
+    <!-- Twitter / X -->
+    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 
+            1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 
+            1.05C18.37 4.5 17.26 4 16 4c-2.35 
+            0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.99-8.84-4.58a4.28 
+            4.28 0 0 0-.58 2.15c0 1.49.75 2.81 
+            1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 
+            2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 
+            1-1.93.07 4.28 4.28 0 0 0 4 
+            2.98c-2 .79-3.49 1.19-5.33 
+            1.84a12.2 12.2 0 0 0 6.93 2.04C16 
+            21 20.33 14.46 20.33 8.79c0-.19 
+            0-.37-.01-.56.84-.6 1.56-1.36 
+            2.14-2.23z"/>
+        </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.76 5.76 0 0 
+            1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 
+            22h-8.5A5.76 5.76 0 0 1 2 
+            16.25v-8.5A5.76 5.76 0 0 1 7.75 
+            2zm0 1.5A4.25 4.25 0 0 0 
+            3.5 7.75v8.5A4.25 4.25 0 0 0 
+            7.75 20.5h8.5A4.25 4.25 0 0 0 
+            20.5 16.25v-8.5A4.25 4.25 0 0 0 
+            16.25 3.5h-8.5zM12 7a5 5 0 1 1 
+            0 10 5 5 0 0 1 0-10zm0 1.5a3.5 
+            3.5 0 1 0 0 7 3.5 3.5 0 0 0 
+            0-7zm5-2a1 1 0 1 1-2 
+            0 1 1 0 0 1 2 0z"/>
+        </svg>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14C2.24 0 0 2.24 0 
+            5v14c0 2.76 2.24 5 5 
+            5h14c2.76 0 5-2.24 
+            5-5V5c0-2.76-2.24-5-5-5zM8.34 
+            19.34H5.67V9h2.67v10.34zM7 
+            7.67c-.85 0-1.55-.7-1.55-1.55 
+            0-.85.7-1.55 1.55-1.55.85 
+            0 1.55.7 1.55 1.55 0 
+            .85-.7 1.55-1.55 1.55zm12.34 
+            11.67h-2.67v-5.34c0-1.27-.02-2.9-1.76-2.9-1.76 
+            0-2.03 1.38-2.03 2.8v5.44H10.2V9h2.56v1.41h.04c.36-.67 
+            1.24-1.37 2.55-1.37 2.73 0 3.23 
+            1.8 3.23 4.14v6.16h-.01z"/>
+        </svg>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.5 6.2a2.94 2.94 0 0 0-2.06-2.08C19.6 
+            3.5 12 3.5 12 3.5s-7.6 0-9.44.62A2.94 
+            2.94 0 0 0 .5 6.2C0 8.04 0 
+            12 0 12s0 3.96.5 5.8a2.94 2.94 0 0 0 
+            2.06 2.08C4.4 20.5 12 20.5 12 
+            20.5s7.6 0 9.44-.62A2.94 2.94 0 0 0 
+            23.5 17.8c.5-1.84.5-5.8.5-5.8s0-3.96-.5-5.8zM9.75 
+            15.5v-7l6 3.5-6 3.5z"/>
+        </svg>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://tiktok.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M16.006 6.124a4.94 4.94 0 0 0 .293 
+            1.672 4.918 4.918 0 0 0 2.032 
+            2.326 4.918 4.918 0 0 0 2.562.7V7.188a8.337 
+            8.337 0 0 1-2.511-.39 8.332 8.332 0 0 
+            1-2.376-1.262zM12.452 0h3.202v17.065c0 1.547-.45 
+            2.78-1.351 3.698-.9.919-2.01 1.382-3.333 
+            1.382-1.322 0-2.433-.463-3.332-1.382-.9-.918-1.35-2.151-1.35-3.698 
+            0-1.546.45-2.778 1.35-3.696.9-.919 2.01-1.382 
+            3.332-1.382.406 0 .793.067 1.158.2V0z"/>
+        </svg>
+    </a>
+
+    <!-- Pinterest -->
+    <a href="https://pinterest.com" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-200">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 
+            5.373 0 12c0 5.084 3.163 9.414 7.643 
+            11.06-.106-.94-.2-2.385.042-3.413.218-.937 
+            1.408-5.957 1.408-5.957s-.36-.72-.36-1.781c0-1.665.968-2.911 
+            2.169-2.911 1.025 0 1.517.77 1.517 
+            1.688 0 1.028-.653 2.567-.993 
+            3.992-.285 1.194.6 2.165 
+            1.776 2.165 2.13 0 3.768-2.245 
+            3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 
+            0-5.409 2.562-5.409 5.2 0 1.009.394 2.091.889 
+            2.741.098.12.112.226.085.345-.091.376-.294 
+            1.199-.336 1.364-.053.225-.172.271-.402.165-1.495-.692-2.432-2.878-2.432-4.647 
+            0-3.777 2.748-7.252 7.92-7.252 4.158 
+            0 7.392 2.967 7.392 6.923 0 4.136-2.607 
+            7.463-6.233 7.463-1.214 0-2.357-.629-2.75-1.378l-.748 
+            2.854c-.271 1.042-1.002 2.349-1.492 3.145C9.57 23.812 
+            10.763 24 12.017 24c6.627 0 12.01-5.373 
+            12.01-12 0-6.627-5.383-12-12.01-12z"/>
+        </svg>
+    </a>
+</div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="our_care.html" class="text-gray-400 hover:text-white transition-colors duration-200">Our Care Approach</a></li>
+                        <li><a href="life_at_danesbrook.html" class="text-gray-400 hover:text-white transition-colors duration-200">Life at Danesbrook</a></li>
+                        <li><a href="facilities.html" class="text-gray-400 hover:text-white transition-colors duration-200">Rooms & Facilities</a></li>
+                        <li><a href="contact_visit.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact & Visit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-headline font-semibold text-lg mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-gray-400">Dementia Care</span></li>
+                        <li><span class="text-gray-400">Rehabilitation Services</span></li>
+                        <li><span class="text-gray-400">Activity Programs</span></li>
+                        <li><span class="text-gray-400">Family Support</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+  <h3 class="font-headline font-semibold text-lg mb-4">Contact Us</h3>
+  <div class="space-y-3">
+
+    <!-- Address (Google Maps link) -->
+    <div class="flex items-start">
+      <svg class="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+      </svg>
+      <a href="https://www.google.com/maps?q=Cadoc+Pl,+Danes+Ct,+Cardiff,+United+Kingdom" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="text-gray-400 hover:text-primary transition-colors">
+        Cadoc Pl, Danes Ct <br> Cardiff <br> United Kingdom
+      </a>
     </div>
 
+    <!-- Phone Number -->
+    <div class="flex items-center">
+      <svg class="h-5 w-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+      </svg>
+      <a href="tel:+442920552245" 
+         class="text-gray-400 hover:text-primary transition-colors">
+        +44 29 2055 2245
+      </a>
+    </div>
+
+    <!-- Email -->
+    <div class="flex items-center">
+      <svg class="h-5 w-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+      </svg>
+      <a href="mailto:admin@danesbrook.com" 
+         class="text-gray-400 hover:text-primary transition-colors">
+        admin@danesbrook.com
+      </a>
+    </div>
+
+  </div>
+</div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Danesbrook House. All Rights Reserved. | 
+                    <a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Privacy Policy</a> | 
+                    <a href="javascript:void(0)" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        // Optional: redirect after 5 seconds
-        setTimeout(() => {
-             window.location.href = "index.html";
-         }, 5000);
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+        });
+
+        // Progress bar animation on scroll
+        window.addEventListener('scroll', function() {
+            const progressBars = document.querySelectorAll('[style*="width:"]');
+            progressBars.forEach(bar => {
+                const rect = bar.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    bar.style.transition = 'width 1s ease-in-out';
+                }
+            });
+        });
     </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script> 
 </body>
+
 </html>
