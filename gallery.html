@@ -102,10 +102,10 @@
     </nav>
 </header>
 
-    <section class="hero-section">
+<section class="hero-section">
     <!-- Background Image with Ken Burns Effect -->
     <div class="hero-background">
-        <img src="assets/images/AD1.jpg" alt="Danesbrook House contact reception" class="animate-kenburns">
+        <img src="assets/images/AD1.jpg" alt="Danesbrook House communal areas and gardens" class="animate-kenburns">
         <div class="hero-overlay"></div>
     </div>
 
@@ -117,50 +117,48 @@
         <div class="content-wrapper">
             <div class="slide-content active">
                 <h1 class="hero-title">
-                    <span class="fade-in-word delay-1">Get In</span> 
-                    <span class="fade-in-word delay-2 accent">Touch</span> 
-                    <span class="fade-in-word delay-3">With Us</span>
+                    <span class="fade-in-word delay-1">Explore</span> 
+                    <span class="fade-in-word delay-2 accent">Life</span> 
+                    <span class="fade-in-word delay-3">at Danesbrook</span>
                 </h1>
                 <p class="hero-description fade-in-up">
-                    We're here to answer your questions and provide the information you need. Whether you're seeking care for yourself or a loved one, our friendly team at Danesbrook House is ready to help you every step of the way.
+                    Take a visual journey through our beautiful care home. From our comfortable living spaces and landscaped gardens to our vibrant activities and caring community, discover what makes Danesbrook House a special place to call home.
                 </p>
                 
                 <!-- Feature Cards -->
                 <div class="cards-grid">
                     <div class="feature-card card-animate">
-                        
-                        <i class="fas fa-phone-alt card-icon"></i>
-                        <p class="card-title"><a href="tel:+442920552245">Call Us</a></p>
-                        <p class="card-subtitle">Available 24/7</p>
+                        <i class="fas fa-images card-icon"></i>
+                        <p class="card-title">Living Spaces</p>
+                        <p class="card-subtitle">Comfortable rooms</p>
                     </div>
                     <div class="feature-card card-animate">
-                        <i class="fas fa-envelope card-icon"></i>
-                        <p class="card-title"><a href="mailto:admin@danesbrook.com">Email</a></p>
-                        <p class="card-subtitle">Quick response</p>
+                        <i class="fas fa-utensils card-icon"></i>
+                        <p class="card-title">Dining Areas</p>
+                        <p class="card-subtitle">Nutritious meals</p>
                     </div>
                     <div class="feature-card card-animate">
-                        <i class="fas fa-map-marker-alt card-icon"></i>
-                        <p class="card-title">Visit</p>
-                        <p class="card-subtitle">Schedule a tour</p>
+                        <i class="fas fa-tree card-icon"></i>
+                        <p class="card-title">Gardens</p>
+                        <p class="card-subtitle">Beautiful grounds</p>
                     </div>
                     <div class="feature-card card-animate">
-                        <i class="fas fa-comments card-icon"></i>
-                        <p class="card-title">Enquire</p>
-                        <p class="card-subtitle">Fill out form</p>
+                        <i class="fas fa-users card-icon"></i>
+                        <p class="card-title">Activities</p>
+                        <p class="card-subtitle">Daily engagement</p>
                     </div>
                 </div>
 
                 <!-- CTA Buttons -->
                 <div class="cta-buttons">
-                    <button class="btn btn-primary button-fade" onclick="scrollToContactForm()">
-                        <a href="mailto:admin@danesbrook.com">
-                        Send Us a Message
-                        </a>
+                    <button class="btn btn-primary button-fade" onclick="scrollToGallery()">
+                        <i class="fas fa-camera"></i>
+                        View Full Gallery
                     </button>
-                    <button class="btn btn-secondary button-fade delay-1" onclick="callUs()">
-                        <i class="fas fa-phone"></i>
+                    <button class="btn btn-secondary button-fade delay-1" onclick="scheduleVisit()">
+                        <i class="fas fa-calendar-check"></i>
                         <a href="tel:+442920552245">
-                        Call Now
+                        Schedule a Visit
                         </a>
                     </button>
                 </div>
@@ -168,24 +166,23 @@
                 <!-- Quick Info -->
                 <div class="quick-info">
                     <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-<a href="tel:+442920552245" 
-         class="text-gray-400 hover:text-primary transition-colors">
-        +44 29 2055 2245
-      </a>                    </div>
+                        <i class="fas fa-video"></i>
+                        <span>Virtual Tour Available</span>
+                    </div>
                     
                     <div class="info-separator">|</div>
                     <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                         <a href="mailto:admin@danesbrook.com" 
-         class="text-gray-400 hover:text-primary transition-colors">
-        admin@danesbrook.com
-      </a>
+                        <i class="fas fa-download"></i>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            Download Brochure
+                        </a>
                     </div>
                     <div class="info-separator">|</div>
                     <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Open 24/7</span>
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+442920552245" class="text-gray-400 hover:text-primary transition-colors">
+                            Book a Tour
+                        </a>
                     </div>
                 </div>
             </div>
@@ -197,7 +194,7 @@
         <div class="scroll-mouse">
             <div class="scroll-wheel"></div>
         </div>
-        <span class="scroll-text">Scroll to contact</span>
+        <span class="scroll-text">Scroll to gallery</span>
     </div>
 </section>
 
@@ -473,6 +470,11 @@
         margin-bottom: 0.125rem;
     }
 
+    .card-title a {
+        color: white;
+        text-decoration: none;
+    }
+
     @media (min-width: 640px) {
         .card-title {
             font-size: 1.125rem;
@@ -525,6 +527,11 @@
         -webkit-tap-highlight-color: transparent;
     }
 
+    .btn a {
+        color: inherit;
+        text-decoration: none;
+    }
+
     @media (min-width: 640px) {
         .btn {
             padding: 1rem 2rem;
@@ -541,7 +548,7 @@
         animation-delay: 1.8s;
     }
 
-   
+  
 
     @media (hover: hover) {
         .btn-primary:hover {
@@ -599,6 +606,16 @@
     .info-item i {
         color: #fbbf24;
         font-size: 1rem;
+    }
+
+    .info-item a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .info-item a:hover {
+        color: #fbbf24;
     }
 
     .info-separator {
@@ -703,16 +720,16 @@
     });
 
     // Button functions
-    function scrollToContact() {
-        const contactSection = document.querySelector('#contact-section');
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: 'smooth' });
+    function scrollToGallery() {
+        const gallerySection = document.querySelector('#gallery-section');
+        if (gallerySection) {
+            gallerySection.scrollIntoView({ behavior: 'smooth' });
         }
     }
 
-    function downloadBrochure() {
-        // Replace with actual brochure download link
-        window.open('/assets/downloads/danesbrook-brochure.pdf', '_blank');
+    function scheduleVisit() {
+        // Could redirect to contact page or open a modal
+        window.location.href = '/contact#schedule-visit';
     }
 
     // Prevent double-tap zoom on buttons (iOS)
@@ -733,6 +750,24 @@
             }
         });
     }
+
+    // Image preloading for gallery
+    function preloadGalleryImages() {
+        // Add gallery image URLs here to preload
+        const imagesToPreload = [
+            'assets/images/gallery/image1.jpg',
+            'assets/images/gallery/image2.jpg',
+            // Add more images as needed
+        ];
+
+        imagesToPreload.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    }
+
+    // Call preload function when page loads
+    window.addEventListener('load', preloadGalleryImages);
 </script>
 
   <!-- Gallery Section -->
